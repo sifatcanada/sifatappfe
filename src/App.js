@@ -46,7 +46,7 @@ function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="https://sifatcanada.com/">
+      <Link color="inherit" href="https://www.sifatcanada.com">
         SIFAT Canada
       </Link>{' '}
       {new Date().getFullYear()}
@@ -57,42 +57,6 @@ function Copyright(props) {
 
 function App() {
   const [step, setStep] = useState('booking');
-
-  const nextPage = () => {
-    // Add logic to determine the next page based on the current page
-    switch (step) {
-      case 'booking':
-        setStep('classes');
-        break;
-      case 'classes':
-        setStep('locations');
-        break;
-      case 'locations':
-        setStep('age-group');
-        break;
-      case 'age-group':
-        setStep('level');
-        break;
-      case 'level':
-        setStep('location-address');
-        break;
-      case 'location-address':
-        setStep('packages');
-        break;
-      case 'packages':
-        setStep('package-detail');
-        break;
-      case 'package-detail':
-        setStep('register');
-        break;
-      case 'register':
-        setStep('register-button');
-        break;
-      // Add more cases for additional pages
-      default:
-        break;
-    }
-  };
 
   const prevPage = () => {
     // Add logic to determine the previous page based on the current page
@@ -116,10 +80,10 @@ function App() {
         setStep('location-address');
         break;
       case 'package-detail':
-        setStep('packages');
+        setStep('location-address');
         break;
       case 'register':
-        setStep('package-detail');
+        setStep('location-address');
         break;
       case 'register-button':
         setStep('register');
@@ -731,13 +695,6 @@ function App() {
           variant="contained"
           sx={{ mt: 3, mb: 2, m: 5 }}
           >Back</Button>
-        )}
-        {(step !== 'register-button') && (
-          <Button
-          onClick={nextPage}
-          variant="contained"
-          sx={{ mt: 3, mb: 2, m: 5 }}
-          >Next</Button>
         )}
       </div>
     </div>
