@@ -1,0 +1,476 @@
+{
+    "server_url": "https://sifat-backend-server-d58ec2ecbe30.herokuapp.com",
+    "sender_email": "info@sifatcanada.com",
+    "reg_email_subject": "Pre-Payment",
+    "reg_payment_email_subject": "Thank you for registering with SIFAT",
+    "phone_number": "+1(647)293-5207",
+    "email_address": "info@sifatcanada.com",
+    "tiktok_link": "https://www.tiktok.com/@sifatcanada?lang=en",
+    "youtube_link": "https://www.youtube.com/@SIFATCANADA",
+    "insta_link": "https://www.instagram.com/sifatcanada",
+    "facebook_link": "https://www.facebook.com/sifatcanada",
+    "twitter_link": "https://twitter.com/sifatcanada?lang=en",
+    "packages": [
+        {
+            "package_id": "PASS-01",
+            "name": "SIFAT PASS",
+            "description": "SIFAT Pass consists of 4 classes and can be used any time in the specific registered class",
+            "type": "pass",
+            "start_date": "NA",
+            "end_date": "NA",
+            "qty": 4,
+            "unit": 22.5,
+            "currency": "CAD",
+            "excluded_dates": [
+                "NA"
+            ],
+            "package_type_id": "PT-01"
+        },
+        {
+            "package_id": "SESSION-01",
+            "name": "WINTER 2024 SESSION",
+            "description": "SIFAT Winter 2024 package is for Jan - Mar 2024. It consists of 11 classes",
+            "type": "semester",
+            "start_date": "2024-01-08 02:00:00 EST",
+            "end_date": "2024-03-31 02:00:00 EST",
+            "qty": 11,
+            "unit": 17.5,
+            "currency": "CAD",
+            "excluded_dates": [
+                "2024-03-10 02:00:00 EST",
+                "2024-03-11 02:00:00 EST",
+                "2024-03-13 02:00:00 EST"
+            ],
+            "package_type_id": "PT-02"
+        }
+    ],
+    "age_group": [
+        {
+            "id": 1,
+            "name": "4-7"
+
+        },
+        {
+            "id": 2,
+            "name": "8-14"
+
+        },
+        {
+            "id": 3,
+            "name": "15+"
+
+        }
+    ],
+    "level": [
+        {
+            "id": 1,
+            "name": "Beginner"
+
+        },
+        {
+            "id": 2,
+            "name": "Intermediate"
+
+        },
+        {
+            "id": 3,
+            "name": "Advanced"
+
+        }
+    ],
+    "locations": [
+        { 
+            "name": "BRAMPTON",
+            "city": "BRAMPTON",
+            "url" : "/sifat-site/static/images/image-button-background.jpg",
+            "locations": [
+                {
+                    "name": "BRAMPTON EAST",
+                    "address" : "71 Delta park Blvd, Unit 1A, Brampton,ON, L6T 5E7",
+                    "classes" : [
+                        {
+                            "class_id": "BRAMPTON-BH-WED-01",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Wednesday | 6:45 to 7:45 pm",
+                            "class_day": 3,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["8-14", "15+"],
+                            "class_type": "Bhangra"
+                        },
+                        {
+                            "class_id": "BRAMPTON-GI-WED-01",
+                            "class_name": "Giddha Classes",
+                            "class_time": "Every Wednesday | 7:45 to 8:45 pm",
+                            "class_day": 3,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["8-14", "15+"],
+                            "class_type": "Giddha"
+                        }
+                    ]
+                },
+                {
+                    "name": "BRAMPTON WEST",
+                    "address" : "1 Nelson St W, Suite 11B, Brampton, ON L6X 3E4, ON",
+                    "classes" : [
+                        {
+                            "class_id": "BRAMPTON-BH-MON-01",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Monday | 5:30 to 6:30 pm",
+                            "class_day": 1,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["4-7"],
+                            "class_type": "Bhangra"
+                        },
+                        {
+                            "class_id": "BRAMPTON-BH-MON-02",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Monday | 5:30 to 6:30 pm",
+                            "class_day": 1,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["8-14"],
+                            "class_type": "Bhangra"
+                        },
+                        {
+                            "class_id": "BRAMPTON-BH-MON-03",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Monday | 6:30 to 7:30 pm",
+                            "class_day": 1,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["8-14", "15+"],
+                            "class_type": "Bhangra"
+                        },
+                        {
+                            "class_id": "BRAMPTON-BH-MON-04",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Monday | 7:30 to 8:30 pm",
+                            "class_day": 1,
+                            "class_level": ["Intermediate", "Advance"],
+                            "age_group": ["15+"],
+                            "class_type": "Bhangra"
+                        },
+                        {
+                            "class_id": "BRAMPTON-BH-MON-05",
+                            "class_name": "Giddha Classes",
+                            "class_time": "Every Monday | 6:30 to 7:30 pm",
+                            "class_day": 1,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["8-14", "15+"],
+                            "class_type": "Giddha"
+                        }
+                    ]
+                }
+            ]  
+        },
+        { 
+            "name": "MISSISSAUGA",
+            "city": "MISSISSAUGA",
+            "url" : "/sifat-site/static/images/image-button-background.jpg",
+            "locations": [
+                {
+                    "name": "MISSISSAUGA",
+                    "address" : "1550 S Gateway Rd, Unit 306, Mississauga, ON, L4W 5K3",
+                    "classes" : [
+                        {
+                            "class_id": "MISSISSAUGA-BH-SUN-01",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Sunday | 4:00 to 5:00 pm",
+                            "class_day": 0,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["4-7", "8-14", "15+"],
+                            "class_type": "Bhangra"
+                        },
+                        {
+                            "class_id": "MISSISSAUGA-GI-SUN-01",
+                            "class_name": "Giddha Classes",
+                            "class_time": "Every Sunday | 3:00 to 4:00 pm",
+                            "class_day": 0,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["4-7", "8-14", "15+"],
+                            "class_type": "Giddha"
+                        }
+                    ]
+                }
+            ]
+        },
+        { 
+            "name": "CALEDON",
+            "city": "CALEDON",
+            "url" : "/sifat-site/static/images/image-button-background.jpg",
+            "locations": [
+                {
+                    "name": "SOUTHFIELD COMMUNITY CENTRE",
+                    "address" : "225 Dougall Ave, Caledon, ON L7C 3M7",
+                    "classes" : [
+                        {
+                            "class_id": "CALEDON-BH-TUE-01",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Tuesday | 7:00 to 8:00 pm",
+                            "class_day": 0,
+                            "class_level": ["Intermediate", "Advance"],
+                            "age_group": ["8-14"],
+                            "class_type": "Bhangra"
+                        },
+                        {
+                            "class_id": "CALEDON-BU-TUE-02",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Tuesday | 8:00 to 9:00 pm",
+                            "class_day": 2,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["15+"],
+                            "class_type": "Bhangra"
+                        },
+                        {
+                            "class_id": "CALEDON-BH-SUN-03",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Sunday | 10:00 to 11:00 am",
+                            "class_day": 0,
+                            "class_level": ["Beginner"],
+                            "age_group": ["4-7"],
+                            "class_type": "Bhangra"
+                        },
+                        {
+                            "class_id": "CALEDON-BH-SUN-04",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Sunday | 11:00 to 12:00 noon",
+                            "class_day": 0,
+                            "class_level": ["Beginner", "Intermediate"],
+                            "age_group": ["8-14"],
+                            "class_type": "Bhangra"
+                        },
+                        {
+                            "class_id": "CALEDON-BH-SUN-05",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Sunday | 12:00 to 1:00 pm",
+                            "class_day": 0,
+                            "class_level": ["Intermediate", "Advance"],
+                            "age_group": ["4-7"],
+                            "class_type": "Bhangra"
+                        }
+                    ]
+                },
+                {
+                    "name": "CALEDON EAST COMMUNITY CENTRE",
+                    "address" : "6215 Old Church Rd, Caledon East, ON L7C 1J7",
+                    "classes" : [
+                        {
+                            "class_id": "CALEDON-BH-SAT-06",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Saturday | 2:00 to 3:00 pm",
+                            "class_day": 6,
+                            "class_level": ["Beginner", "Intermediate"],
+                            "age_group": ["4-7"],
+                            "class_type": "Bhangra"
+                        },
+                        {
+                            "class_id": "CALEDON-BH-SAT-07",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Saturday | 3:00 to 4:00 pm",
+                            "class_day": 6,
+                            "class_level": ["Beginner"],
+                            "age_group": ["8-14", "15+"],
+                            "class_type": "Bhangra"
+                        },
+                        {
+                            "class_id": "CALEDON-BH-SAT-08",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Saturday | 4:00 to 5:00 pm",
+                            "class_day": 6,
+                            "class_level": ["Intermediate", "Advance"],
+                            "age_group": ["8-14", "15+"],
+                            "class_type": "Bhangra"
+                        }
+                    ]
+                }
+            ]
+        },
+        { 
+            "name": "ORANGEVILLE",
+            "city": "ORANGEVILLE",
+            "url" : "/sifat-site/static/images/image-button-background.jpg",
+            "locations": [
+                {
+                    "name": "ORANGEVILLE",
+                    "address" : "70 Centennial Rd #1B, Orangeville, ON, L9W 1P9",
+                    "classes" : [
+                        {
+                            "class_id": "ORANGEVILLE-BH-SUN-01",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Sunday | 10:00 to 11:00 am",
+                            "class_day": 0,
+                            "class_level": ["Intermediate", "Advance"],
+                            "age_group": ["8-14", "15+"],
+                            "class_type": "Bhangra"
+                        },
+                        {
+                            "class_id": "ORANGEVILLE-BH-SUN-02",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Sunday | 11:00 to 12:00 noon",
+                            "class_day": 0,
+                            "class_level": ["Beginner"],
+                            "age_group": ["4-7", "8-14", "15+"],
+                            "class_type": "Bhangra"
+                        }
+                    ]
+                }
+            ]
+        },
+        { 
+            "name": "OAKVILLE",
+            "city": "OAKVILLE",
+            "url" : "/sifat-site/static/images/image-button-background.jpg",
+            "locations": [
+                {
+                    "name": "QUEEN ELIZABETH COMMUNITY CENTRE",
+                    "address" : "2302 Bridge Rd, Oakville, ON, L6L 3L5",
+                    "classes" : [
+                        {
+                            "class_id": "OAKVILLE-BH-SUN-01",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Sunday | 6:00 to 7:00 pm",
+                            "class_day": 0,
+                            "class_level": ["Intermediate", "Advance"],
+                            "age_group": ["8-14", "15+"],
+                            "class_type": "Bhangra"
+                        },
+                        {
+                            "class_id": "OAKVILLE-BH-SUN-02",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Sunday | 7:00 to 8:00 pm",
+                            "class_day": 0,
+                            "class_level": ["Beginner"],
+                            "age_group": ["4-7", "8-14", "15+"],
+                            "class_type": "Bhangra"
+                        }
+                    ]
+                }
+            ]
+        },
+        { 
+            "name": "CAMBRIDGE",
+            "city": "CAMBRIDGE",
+            "url" : "/sifat-site/static/images/image-button-background.jpg",
+            "locations": [
+                {
+                    "name": "W.G JOHNSON CENTRE",
+                    "address" : "31 Kribs St, Cambridge, ON, N3C 2L3",
+                    "classes" : [
+                        {
+                            "class_id": "CAMBRIDGE-BH-THU-01",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Thursday | 5:00 to 6:00 pm",
+                            "class_day": 4,
+                            "class_level": ["Beginner"],
+                            "age_group": ["4-7"],
+                            "class_type": "Bhangra"
+                        },
+                        {
+                            "class_id": "CAMBRIDGE-BH-THU-02",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Thursday | 6:00 to 7:00 pm",
+                            "class_day": 4,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["8-14"],
+                            "class_type": "Bhangra"
+                        },
+                        {
+                            "class_id": "CAMBRIDGE-BH-THU-03",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Thursday | 7:00 to 8:00 pm",
+                            "class_day": 4,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["15+"],
+                            "class_type": "Bhangra"
+                        }
+                    ]
+                },
+                {
+                    "name": "CAMBRIDGE CENTRE OF ARTS",
+                    "address" : "60 Dickson St, Cambridge, ON N1R 8N1",
+                    "classes" : [
+                        {
+                            "class_id": "CAMBRIDGE-BH-SAT-04",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Saturday | 10:00 to 11:00 am",
+                            "class_day": 6,
+                            "class_level": ["Beginner"],
+                            "age_group": ["4-7"],
+                            "class_type": "Bhangra"
+                        },
+                        {
+                            "class_id": "CAMBRIDGE-BH-SAT-05",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Saturday | 11:00 to 12:00 noon",
+                            "class_day": 6,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["8-14"],
+                            "class_type": "Bhangra"
+                        },
+                        {
+                            "class_id": "CAMBRIDGE-BH-SAT-06",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Saturday | 12:00 to 1:00 pm",
+                            "class_day": 6,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["15+"],
+                            "class_type": "Bhangra"
+                        }
+                    ]
+                }
+            ]
+        },
+        { 
+            "name": "MARKHAM/SCARBOROUGH",
+            "city": "MARKHAM/SCARBOROUGH",
+            "url" : "/sifat-site/static/images/image-button-background.jpg",
+            "locations": [
+                {
+                    "name": "MARKHAM/SCARBOROUGH",
+                    "address" : "850 Tapscott Rd, Scarborough, ON, M1X 1N4",
+                    "classes" : [
+                        {
+                            "class_id": "MARKHAM-BH-SUN-01",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Sunday | 3:40 to 4:40 pm",
+                            "class_day": 0,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["8-14", "15+"],
+                            "class_type": "Bhangra"
+                        }
+                    ]
+                }
+            ]
+        },
+        { 
+            "name": "LONDON",
+            "city": "LONDON",
+            "url" : "/sifat-site/static/images/image-button-background.jpg",
+            "locations": [
+                {
+                    "name": "LONDON",
+                    "address" : "1106 Dearness Drive, London, ON, N6E 1N9",
+                    "classes" : [
+                        {
+                            "class_id": "LONDON-BH-SUN-01",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Sunday | 11:30 to 12:30 pm",
+                            "class_day": 0,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["8-14", "15+"],
+                            "class_type": "Bhangra"
+                        },
+                        {
+                            "class_id": "LONDON-GI-SUN-01",
+                            "class_name": "Giddha Classes",
+                            "class_time": "Every Sunday | 12:30 to 1:30 pm",
+                            "class_day": 0,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["8-14", "15+"],
+                            "class_type": "Giddha"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+  
