@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/sifatappfe/static/css/main.f539dc57.css",
-    "main.js": "/sifatappfe/static/js/main.a8fcaabd.js",
+    "main.js": "/sifatappfe/static/js/main.fe906841.js",
     "static/js/787.326cd16d.chunk.js": "/sifatappfe/static/js/787.326cd16d.chunk.js",
     "index.html": "/sifatappfe/index.html",
     "main.f539dc57.css.map": "/sifatappfe/static/css/main.f539dc57.css.map",
-    "main.a8fcaabd.js.map": "/sifatappfe/static/js/main.a8fcaabd.js.map",
+    "main.fe906841.js.map": "/sifatappfe/static/js/main.fe906841.js.map",
     "787.326cd16d.chunk.js.map": "/sifatappfe/static/js/787.326cd16d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f539dc57.css",
-    "static/js/main.a8fcaabd.js"
+    "static/js/main.fe906841.js"
   ]
 }
