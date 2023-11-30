@@ -115,7 +115,7 @@
                     "address" : "1 Nelson St W, Suite 11B, Brampton, ON L6X 3E4, ON",
                     "classes" : [
                         {
-                            "class_id": "BRAMPTON-BH-SUN-01",
+                            "class_id": "BRAMPTON-BH-SUN-03",
                             "class_name": "Bhangra Classes",
                             "class_time": "Every Sunday | 1:00 to 2:00 pm",
                             "class_day": 0,
@@ -125,7 +125,7 @@
                             "class_link": "NA"
                         },
                         {
-                            "class_id": "BRAMPTON-BH-MON-01",
+                            "class_id": "BRAMPTON-BH-MON-04",
                             "class_name": "Bhangra Classes",
                             "class_time": "Every Monday | 5:30 to 6:30 pm",
                             "class_day": 1,
@@ -135,7 +135,7 @@
                             "class_link": "NA"
                         },
                         {
-                            "class_id": "BRAMPTON-BH-MON-02",
+                            "class_id": "BRAMPTON-BH-MON-05",
                             "class_name": "Bhangra Classes",
                             "class_time": "Every Monday | 5:30 to 6:30 pm",
                             "class_day": 1,
@@ -145,7 +145,7 @@
                             "class_link": "NA"
                         },
                         {
-                            "class_id": "BRAMPTON-BH-MON-03",
+                            "class_id": "BRAMPTON-BH-MON-06",
                             "class_name": "Bhangra Classes",
                             "class_time": "Every Monday | 6:30 to 7:30 pm",
                             "class_day": 1,
@@ -155,7 +155,7 @@
                             "class_link": "NA"
                         },
                         {
-                            "class_id": "BRAMPTON-BH-MON-04",
+                            "class_id": "BRAMPTON-BH-MON-07",
                             "class_name": "Bhangra Classes",
                             "class_time": "Every Monday | 7:30 to 8:30 pm",
                             "class_day": 1,
@@ -165,7 +165,7 @@
                             "class_link": "NA"
                         },
                         {
-                            "class_id": "BRAMPTON-BH-MON-05",
+                            "class_id": "BRAMPTON-BH-MON-08",
                             "class_name": "Giddha Classes",
                             "class_time": "Every Monday | 6:30 to 7:30 pm",
                             "class_day": 1,

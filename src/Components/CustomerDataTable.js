@@ -1,9 +1,7 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
 import { Grid } from '@mui/material';
 
 export default function CustomerDataTable({ first_name, last_name, phone, email, class_location, class_address, class_timing, student_age, package_name, package_qty, package_unit }) {

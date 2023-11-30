@@ -22,32 +22,32 @@ export default function SocialMediaBar() {
     <Container maxWidth="md" sx={{ mt: 1 }}>
       <Stack direction="row" spacing={1}>
 
-        <a href={tiktok_link} target="_blank">
+        <a href={tiktok_link} target="_blank" rel="noopener noreferrer">
           <div style={{ width: "35px" }}>
             <TikTokIcon />
           </div>
         </a>
 
-        <a href={youtube_link} target="_blank">
+        <a href={youtube_link} target="_blank" rel="noopener noreferrer">
           <YouTubeIcon fontSize="large" sx={{ color: "#FF0000" }} />
         </a>
 
-        <a href={insta_link} target="_blank">
+        <a href={insta_link} target="_blank" rel="noopener noreferrer">
         <InstagramIcon fontSize="large" sx={{ color: "#E1306C" }} />
         </a>
 
-        <a href={facebook_link} target="_blank">
+        <a href={facebook_link} target="_blank" rel="noopener noreferrer">
         <FacebookIcon color="primary" fontSize="large" />
         </a>
 
-        <a href={twitter_link} target="_blank">
+        <a href={twitter_link} target="_blank" rel="noopener noreferrer">
         <TwitterIcon fontSize="large" sx={{ color: "#1DA1F2" }} />
         </a>
 
-        <a href={`tel:${phone_number}`}>
+        <a href={`tel:${phone_number}`} rel="noopener noreferrer">
             <PhoneIcon fontSize="large" sx={{ color: "#000000" }}/>
         </a>
-        <a href={`mailto:${email_address}`}>
+        <a href={`mailto:${email_address}`} rel="noopener noreferrer">
             <EmailIcon  fontSize="large" sx={{ color: "#000000" }}/>
         </a>
         

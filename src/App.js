@@ -102,6 +102,7 @@ function App() {
   const [selectedCityLocationClasses, setSelectedCityLocationClasses] = useState([{}]);
   const [selectedClassesByAgeGroup, setSelectedClassesByAgeGroup] = useState([{}]);
   const [selectedClassesByAgeLevel, setSelectedClassesByAgeLevel] = useState([{}]);
+  const [selectedClassesByAgeLevelTiming, setSelectedClassesByAgeLevelTiming] = useState([{}]);
   const [selectedCard, setSelectedCard] = useState(null);
   const [termsAccepted, setTermsAccepted] = useState(false);
   const [selectedClassPackage, setSelectedClassPackage] = useState({});
@@ -214,10 +215,16 @@ function App() {
     setStep('location-address');
   };
 
-  const handleClassTimingChange = (event) => {    
-    setClassTiming(event.target.value);
-    // console.log(classTiming)
-    // console.log(selectedClassesByAgeLevel)
+  const handleClassTimingChange = (event) => {
+    let class_time = []
+    selectedClassesByAgeLevel.filter((items) => {
+      if(items.class_id === event.target.value) {
+        class_time.push(items)
+      }
+    });
+    setSelectedClassesByAgeLevelTiming(class_time)
+    setClassTiming(class_time[0].class_time + " | " +  class_time[0].class_type);
+    class_time = []
     setStep('packages');
   };
 
@@ -486,7 +493,7 @@ function App() {
           {selectedClassesByAgeLevel.map((item) => (
               <div>
                 <FormControlLabel
-                value={item.class_time+" | "+item.class_type}
+                value={item.class_id}
                 control={<Radio />} 
                 label={
                   <Typography variant="body1">
@@ -507,8 +514,9 @@ function App() {
             <div>
               <Button
                 component="a"
-                href={selectedClassesByAgeLevel[0].class_link}
+                href={selectedClassesByAgeLevelTiming[0].class_link}
                 target="_blank"
+                rel="noopener noreferrer"
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
               >Proceed to Registration
@@ -518,7 +526,7 @@ function App() {
 
         {selectedCity[0].name === 'CAMBRIDGE' && (
             <div>
-              <p>Please visit Cambridge City <a href="https://www.cambridge.ca/en/index.aspx">Website</a> to register for Bhangra Dance Classes</p>
+              <p>Please visit Cambridge City <a rel="noopener noreferrer" target="_blank" href="https://www.cambridge.ca/en/index.aspx">Website</a> to register for Bhangra Dance Classes</p>
             </div>
         )}
 
