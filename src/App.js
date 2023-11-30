@@ -68,25 +68,25 @@ function App() {
         setStep('classes');
         break;
       case 'age-group':
-        setStep('locations');
+        setStep('classes');
         break;
       case 'level':
-        setStep('age-group');
+        setStep('classes');
         break;
       case 'location-address':
-        setStep('level');
+        setStep('classes');
         break;
       case 'packages':
-        setStep('location-address');
+        setStep('classes');
         break;
       case 'package-detail':
-        setStep('location-address');
+        setStep('classes');
         break;
       case 'register':
-        setStep('location-address');
+        setStep('classes');
         break;
       case 'register-button':
-        setStep('register');
+        setStep('classes');
         break;
       case 'payment':
         setStep('register-button');
@@ -157,6 +157,8 @@ function App() {
 
   const handleClasses = (event) => {
     // console.log(event.target.value)
+    // sort cities by city name
+    jsonData.locations.sort((a, b) => a.name.localeCompare(b.name))
     setStep('classes');
   };
 
@@ -214,7 +216,8 @@ function App() {
 
   const handleClassTimingChange = (event) => {    
     setClassTiming(event.target.value);
-    // console.log(selectedCity[0].name);
+    // console.log(classTiming)
+    // console.log(selectedClassesByAgeLevel)
     setStep('packages');
   };
 
@@ -391,7 +394,7 @@ function App() {
         <>
           <br></br><br></br>
           <Typography gutterBottom variant="h6" color="text.primary" component="div" fontWeight="bold">
-          SIFAT is providing Bhangra Classes across {jsonData.locations.length} cities. Kindly choose a city to commence your enrollment
+          SIFAT is providing Bhangra & Giddha Classes across {jsonData.locations.length} cities. Kindly choose a city to commence your enrollment
           </Typography>
           
           {jsonData.locations.map((item) => (
@@ -502,7 +505,14 @@ function App() {
         <>
         {selectedCity[0].name === 'CALEDON' && (
             <div>
-              <p>Please visit Town of Caledon <a href="https://townofcaledon.perfectmind.com/24154/Clients/BookMe4BookingPages/BookingCoursesPage?calendarId=ea6c7ce9-e287-4962-9561-16cd31a705fc&widgetId=8662b28c-5ba5-4917-9936-9c616d0912eb&embed=False&sessionsMode=True">Recreation Programs</a> to register for Bhangra Dance Classes</p>
+              <Button
+                component="a"
+                href={selectedClassesByAgeLevel[0].class_link}
+                target="_blank"
+                variant="contained"
+                sx={{ mt: 3, mb: 2 }}
+              >Proceed to Registration
+              </Button>
             </div>
         )}
 
