@@ -57,15 +57,15 @@ const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, 
         }
       };
 
-      const storeData = async (first_name, last_name, phone, email, location, address, class_timing, class_package, student_age, amount, transactionId, tab_name) => {
+      const storeData = async (first_name, last_name, email, phone, location, address, class_timing, class_package, student_age, amount, transactionId, tab_name) => {
 
         try {
           await axios.post(server_url+'/store', {
           date: getCurrentDate(),
           first_name: first_name,
           last_name: last_name,
-          phone: phone,
           email: email,
+          phone: phone,
           location: location,
           address: address,
           class_timing: class_timing,
@@ -144,8 +144,8 @@ const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, 
               storeData(
                 first_name,
                 last_name,
-                phone,
                 email,
+                phone,
                 class_location,
                 class_address,
                 class_timing,

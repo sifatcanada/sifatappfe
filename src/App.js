@@ -332,15 +332,15 @@ function App() {
     }
   };
 
-  const storeData = async (first_name, last_name, phone, email, location, address, class_timing, class_package, student_age, amount, transactionId, tab_name) => {
+  const storeData = async (first_name, last_name, email, phone, location, address, class_timing, class_package, student_age, amount, transactionId, tab_name) => {
 
     try {
       await axios.post(jsonData.server_url+'/store', {
       date: getCurrentDate(),
       first_name: first_name,
       last_name: last_name,
-      phone: phone,
       email: email,
+      phone: phone,
       location: location,
       address: address,
       class_timing: class_timing,
@@ -393,8 +393,8 @@ function App() {
       storeData(
         formData.firstName,
         formData.lastName,
+        formData.email,
         formData.phone,
-        jsonData.email,
         location,
         address,
         classTiming,
