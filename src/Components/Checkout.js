@@ -57,6 +57,30 @@ const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, 
         }
       };
 
+      const storeData = async (first_name, last_name, phone, email, location, address, class_timing, class_package, student_age, amount, transactionId, tab_name) => {
+
+        try {
+          await axios.post(server_url+'/store', {
+          date: getCurrentDate(),
+          first_name: first_name,
+          last_name: last_name,
+          phone: phone,
+          email: email,
+          location: location,
+          address: address,
+          class_timing: class_timing,
+          class_package: class_package,
+          student_age: student_age,
+          amount: amount,
+          transactionId: transactionId,
+          tab_name: tab_name,
+          });
+          console.log('success');
+        } catch (error) {
+          console.error('failure:', error);
+        }
+      };
+
     const createOrder = async (data, actions) => {
         const response = await axios.post(server_url+'/api/create-payment',
         {
@@ -115,6 +139,21 @@ const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, 
                 (package_qty * class_package.unit * 1.13).toFixed(2),
                 transactionId,
                 orderId,
+              );
+
+              storeData(
+                first_name,
+                last_name,
+                phone,
+                email,
+                class_location,
+                class_address,
+                class_timing,
+                class_package.name,
+                student_age,
+                (package_qty * class_package.unit * 1.13).toFixed(2),
+                transactionId,
+                "Payment"
               );
 
             // alert("Payment successful!!");

@@ -332,6 +332,30 @@ function App() {
     }
   };
 
+  const storeData = async (first_name, last_name, phone, email, location, address, class_timing, class_package, student_age, amount, transactionId, tab_name) => {
+
+    try {
+      await axios.post(jsonData.server_url+'/store', {
+      date: getCurrentDate(),
+      first_name: first_name,
+      last_name: last_name,
+      phone: phone,
+      email: email,
+      location: location,
+      address: address,
+      class_timing: class_timing,
+      class_package: class_package,
+      student_age: student_age,
+      amount: amount,
+      transactionId: transactionId,
+      tab_name: tab_name,
+      });
+      console.log('success');
+    } catch (error) {
+      console.error('failure:', error);
+    }
+  };
+
   const handleFormSubmit = (event) => {
     event.preventDefault();
     // Validate all fields before submitting
@@ -365,6 +389,22 @@ function App() {
         "Not Paid",
         "N/A"
       );
+
+      storeData(
+        formData.firstName,
+        formData.lastName,
+        formData.phone,
+        jsonData.email,
+        location,
+        address,
+        classTiming,
+        selectedClassPackage.name,
+        selectedAgeGroup,
+        (selectedClassPackage.qty * selectedClassPackage.unit * 1.13).toFixed(2),
+        "Not Paid",
+        "Pre-Payment"
+      );
+
       setIsSubmitting(false);
       setStep('payment');
     }
