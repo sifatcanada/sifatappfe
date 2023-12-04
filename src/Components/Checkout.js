@@ -39,6 +39,9 @@ const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, 
                 },
             },
           ],
+          application_context: {
+            shipping_preference: "NO_SHIPPING", // Disable shipping
+          },
         });
       };
 
@@ -111,7 +114,7 @@ const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, 
             <Typography gutterBottom variant="h6" component="div" fontWeight="bold">
                 SELECT A PAYMENT METHOD
             </Typography>
-            <PayPalScriptProvider options={{ "client-id": CLIENT_ID, currency: "CAD" }}>
+            <PayPalScriptProvider options={{ "client-id": CLIENT_ID, currency: "CAD", locale: "en_CA" }}>
                 <Grid container spacing={0.5} justifyContent="center">
                     <Grid item xs={12} sm={6}>
                         <PayPalButtons
