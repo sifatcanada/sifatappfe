@@ -39,9 +39,6 @@ const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, 
                 },
             },
           ],
-          application_context: {
-            shipping_preference: "NO_SHIPPING", // Disable shipping
-          },
         });
       };
 
