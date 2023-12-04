@@ -329,7 +329,7 @@ function App() {
         formData.lastName,
         formData.phone,
         jsonData.sender_email,
-        jsonData.sender_email,
+        formData.email,
         jsonData.reg_email_subject + " - " + formData.firstName,
         location,
         address,
