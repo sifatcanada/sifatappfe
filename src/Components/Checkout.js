@@ -4,6 +4,9 @@ import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import { Grid } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import axios from 'axios';
+import { sendEmail } from './Email';
+import { getCurrentDate } from './Date';
+import { storeData } from './GoogleSheetStore';
 
 const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, class_location, class_address, class_timing, class_package, student_age, package_qty, server_url }) => {
     const [show, setShow] = useState(false);
@@ -13,73 +16,6 @@ const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, 
     const [transactionId, setTransactionId] = useState(false);
     const [step, setStep] = useState('checkout-payment');
     const [userEmail, setUserEmail] = useState('');
-
-    const getCurrentDate = () => {
-        const currentDate = new Date();
-    
-        const options = {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric',
-          hour: 'numeric',
-          minute: 'numeric',
-          second: 'numeric',
-          timeZoneName: 'short',
-        };
-    
-        return currentDate.toLocaleDateString('en-US', options);
-      };
-    
-
-    const sendEmail = async (first_name, last_name, phone, email, sender_email, subject, class_location, class_address, class_timing, class_package, student_age, amount, transactionId, orderId) => {
-        try {
-            setUserEmail(email)
-            await axios.post(server_url+'/send-email', {
-            date: getCurrentDate(),
-            to: email,
-            subject: subject,
-            sender_email: sender_email,
-            first_name: first_name,
-            last_name: last_name,
-            phone: phone,
-            location: class_location,
-            address: class_address,
-            class_timing: class_timing,
-            class_package: class_package,
-            student_age: student_age,
-            amount: amount,
-            transactionId: transactionId,
-            orderId: orderId,
-          });
-          console.log('Email sent successfully');
-        } catch (error) {
-          console.error('Error sending email:', error);
-        }
-      };
-
-      const storeData = async (first_name, last_name, email, phone, location, address, class_timing, class_package, student_age, amount, transactionId, tab_name) => {
-
-        try {
-          await axios.post(server_url+'/store', {
-          date: getCurrentDate(),
-          first_name: first_name,
-          last_name: last_name,
-          email: email,
-          phone: phone,
-          location: location,
-          address: address,
-          class_timing: class_timing,
-          class_package: class_package,
-          student_age: student_age,
-          amount: amount,
-          transactionId: transactionId,
-          tab_name: tab_name,
-          });
-          console.log('success');
-        } catch (error) {
-          console.error('failure:', error);
-        }
-      };
 
     const createOrder = async (data, actions) => {
         const response = await axios.post(server_url+'/api/create-payment',
@@ -123,8 +59,10 @@ const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, 
 
     useEffect(() => {
         if (success) {
-
+          
             sendEmail(
+                server_url,
+                getCurrentDate(),
                 first_name,
                 last_name,
                 phone,
@@ -138,10 +76,11 @@ const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, 
                 student_age,
                 (package_qty * class_package.unit * 1.13).toFixed(2),
                 transactionId,
-                orderId,
               );
 
               storeData(
+                server_url,
+                getCurrentDate(),
                 first_name,
                 last_name,
                 email,

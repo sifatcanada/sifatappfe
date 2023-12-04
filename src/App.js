@@ -20,6 +20,9 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { styled } from '@mui/system';
 import axios from 'axios';
 import { disclaimerTerms } from './disclaimer'
+import { sendEmail } from './Components/Email';
+import { getCurrentDate } from './Components/Date';
+import { storeData } from './Components/GoogleSheetStore';
 import './App.css';
 import jsonData from './data.json'; // Import the JSON file
 
@@ -119,20 +122,6 @@ function App() {
   const classes = useStyles();
   const isLandingPage = step === 'booking';
   var targetPackage = jsonData.packages
-
-  const getCurrentDate = () => {
-    const currentDate = new Date();
-    const options = {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-      hour: 'numeric',
-      minute: 'numeric',
-      second: 'numeric',
-      timeZoneName: 'short',
-    };
-    return currentDate.toLocaleDateString('en-US', options);
-  };
 
   const calculateDays = (startDate, endDate, day, excludedDates) => {
     const start = new Date(startDate);
@@ -306,55 +295,6 @@ function App() {
         break;
     }
   };
-    
-  const sendEmail = async (first_name, last_name, phone, recipient_email, sender_email, subject, location, address, class_timing, class_package, student_age, amount, transactionId, orderID) => {
-    try {
-      await axios.post(jsonData.server_url+'/send-email', {
-      date: getCurrentDate(),
-      to: sender_email,
-      subject: subject,
-      sender_email: sender_email,
-      first_name: first_name,
-      last_name: last_name,
-      phone: phone,
-      location: location,
-      address: address,
-      class_timing: class_timing,
-      class_package: class_package,
-      student_age: student_age,
-      amount: amount,
-      transactionId: transactionId,
-      orderId: orderID,
-      });
-      console.log('Email sent successfully');
-    } catch (error) {
-      console.error('Error sending email:', error);
-    }
-  };
-
-  const storeData = async (first_name, last_name, email, phone, location, address, class_timing, class_package, student_age, amount, transactionId, tab_name) => {
-
-    try {
-      await axios.post(jsonData.server_url+'/store', {
-      date: getCurrentDate(),
-      first_name: first_name,
-      last_name: last_name,
-      email: email,
-      phone: phone,
-      location: location,
-      address: address,
-      class_timing: class_timing,
-      class_package: class_package,
-      student_age: student_age,
-      amount: amount,
-      transactionId: transactionId,
-      tab_name: tab_name,
-      });
-      console.log('success');
-    } catch (error) {
-      console.error('failure:', error);
-    }
-  };
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
@@ -372,8 +312,11 @@ function App() {
       setEmail(formData.email)
       setPhone(formData.phone)
       setIsSubmitting(true);
+      
       // console.log(formData)
       sendEmail(
+        jsonData.server_url,
+        getCurrentDate(),
         formData.firstName,
         formData.lastName,
         formData.phone,
@@ -386,11 +329,12 @@ function App() {
         selectedClassPackage.name,
         selectedAgeGroup,
         (selectedClassPackage.qty * selectedClassPackage.unit * 1.13).toFixed(2),
-        "Not Paid",
-        "N/A"
+        "Not Paid"
       );
 
       storeData(
+        jsonData.server_url,
+        getCurrentDate(),
         formData.firstName,
         formData.lastName,
         formData.email,
