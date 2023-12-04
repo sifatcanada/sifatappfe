@@ -109,6 +109,8 @@ function App() {
   const [termsAccepted, setTermsAccepted] = useState(false);
   const [selectedClassPackage, setSelectedClassPackage] = useState({});
   const [selectedAgeGroup, setSelectedAgeGroup] = useState('');
+  const [semClassQty, setSemClassQty] = useState(0);
+  const [semAvailableDates, setSemAvailableDates] = useState([]);
   const [location, setLocation] = useState(''); 
   const [address, setAddress] = useState('');
   const [classTiming, setClassTiming] = useState('');
@@ -135,7 +137,8 @@ function App() {
         if (!dateObjects.includes((new Date(start)).toLocaleString('en-US', { timeZone: 'EST' }))) {
             // console.log("match found")
             count++;
-            availableDates.push(new Date(start)); // Save the date of each Monday
+            availableDates.push(new Date(start).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })); // Save the date of each Monday
+            //
         }
       }
       // Move to the next day
@@ -212,6 +215,12 @@ function App() {
     });
     setSelectedClassesByAgeLevelTiming(class_time)
     setClassTiming(class_time[0].class_time + " | " +  class_time[0].class_type);
+    
+    const { count, availableDates } = calculateDays(jsonData.packages[1].start_date, jsonData.packages[1].end_date, class_time[0].class_day, jsonData.packages[1].excluded_dates);
+    // console.log(count)
+    // console.log(availableDates)
+    setSemClassQty(count)
+    setSemAvailableDates(availableDates)
     class_time = []
     setStep('packages');
   };
@@ -327,8 +336,10 @@ function App() {
         classTiming,
         selectedClassPackage.name,
         selectedAgeGroup,
-        (selectedClassPackage.qty * selectedClassPackage.unit * 1.13).toFixed(2),
-        "Not Paid"
+        ((selectedClassPackage.type === 'semester' ? semClassQty : selectedClassPackage.qty) * selectedClassPackage.unit * 1.13).toFixed(2),
+        "Not Paid",
+        (selectedClassPackage.type === 'semester' ? semAvailableDates : "NA"),
+        (selectedClassPackage.type === 'semester' ? true : false)
       );
 
       storeData(
@@ -343,7 +354,7 @@ function App() {
         classTiming,
         selectedClassPackage.name,
         selectedAgeGroup,
-        (selectedClassPackage.qty * selectedClassPackage.unit * 1.13).toFixed(2),
+        ((selectedClassPackage.type === 'semester' ? semClassQty : selectedClassPackage.qty) * selectedClassPackage.unit * 1.13).toFixed(2),
         "Not Paid",
         "Pre-Payment"
       );
@@ -513,6 +524,7 @@ function App() {
                   <Grid item>
                     <ActionCard
                       item={item}
+                      semClassQty={semClassQty}
                       onClick={handlePackageType}
                       selected={selectedCard === item}
                     />
@@ -659,6 +671,8 @@ function App() {
             student_age={selectedAgeGroup}
             package_name={selectedClassPackage.name}
             package_qty={selectedClassPackage.qty}
+            package_type={selectedClassPackage.type}
+            semClassQty={semClassQty}
             package_unit={selectedClassPackage.unit}
           />
           <br/>
@@ -675,6 +689,9 @@ function App() {
             class_package={selectedClassPackage}
             student_age={selectedAgeGroup}
             package_qty={selectedClassPackage.qty}
+            package_type={selectedClassPackage.type}
+            semClassQty={semClassQty}
+            semAvailableDates={semAvailableDates}
             server_url={jsonData.server_url}
           />
         </>

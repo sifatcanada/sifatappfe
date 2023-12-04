@@ -4,7 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
-export default function ActionCard({ item, onClick, selected }) {
+export default function ActionCard({ item, semClassQty, onClick, selected }) {
   return (
     <>
     <Card sx={{ maxWidth: 325, m: 2, border: "1px solid #1976D2", height: 175,  backgroundColor: selected ? '#1976D2' : 'white'}} variant="outlined" onClick={() => onClick(item)}>
@@ -17,7 +17,7 @@ export default function ActionCard({ item, onClick, selected }) {
             {item.description}
           </Typography>
           <br></br>
-          ${item.qty * item.unit} CAD + HST
+          ${(item.type === 'semester' ? semClassQty : item.qty) * item.unit} CAD + HST
         </CardContent>
       </CardActionArea>
     </Card>

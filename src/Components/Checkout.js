@@ -8,7 +8,7 @@ import { sendEmail } from './Email';
 import { getCurrentDate } from './Date';
 import { storeData } from './GoogleSheetStore';
 
-const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, class_location, class_address, class_timing, class_package, student_age, package_qty, server_url }) => {
+const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, class_location, class_address, class_timing, class_package, student_age, package_qty, package_type, semClassQty, semAvailableDates, server_url }) => {
     const [show, setShow] = useState(false);
     const [success, setSuccess] = useState(false);
     const [ErrorMessage, setErrorMessage] = useState("");
@@ -20,7 +20,7 @@ const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, 
     const createOrder = async (data, actions) => {
         const response = await axios.post(server_url+'/api/create-payment',
         {
-            "amount": (package_qty * class_package.unit * 1.13).toFixed(2),
+            "amount": ((package_type === 'semester' ? semClassQty : package_qty) * class_package.unit * 1.13).toFixed(2),
             "currency_code": "CAD",
             "return_url": "https://sifatcanada.com/success",
             "cancel_url": "https://sifatcanada.com/cancel"
@@ -34,8 +34,8 @@ const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, 
                 description: class_package.name,
                 amount: {
                     currency_code: "CAD",
-                    value: (package_qty * class_package.unit * 1.13).toFixed(2),
-                    quantity: package_qty
+                    value: ((package_type === 'semester' ? semClassQty : package_qty) * class_package.unit * 1.13).toFixed(2),
+                    quantity: (package_type === 'semester' ? semClassQty : package_qty)
                 },
             },
           ],
@@ -59,7 +59,7 @@ const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, 
 
     useEffect(() => {
         if (success) {
-          
+
             sendEmail(
                 server_url,
                 getCurrentDate(),
@@ -74,8 +74,10 @@ const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, 
                 class_timing,
                 class_package.name,
                 student_age,
-                (package_qty * class_package.unit * 1.13).toFixed(2),
+                ((package_type === 'semester' ? semClassQty : package_qty) * class_package.unit * 1.13).toFixed(2),
                 transactionId,
+                (package_type === 'semester' ? semAvailableDates : "NA"),
+                (package_type === 'semester' ? true : false)
               );
 
               storeData(
@@ -90,7 +92,7 @@ const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, 
                 class_timing,
                 class_package.name,
                 student_age,
-                (package_qty * class_package.unit * 1.13).toFixed(2),
+                ((package_type === 'semester' ? semClassQty : package_qty) * class_package.unit * 1.13).toFixed(2),
                 transactionId,
                 "Payment"
               );
@@ -133,7 +135,7 @@ const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, 
         <Typography gutterBottom variant="body2" component="div" fontWeight="bold">
             Confirmation Number: {transactionId}
             <br></br>
-            Email Confirmation Sent To: {userEmail}
+            Email Confirmation Sent To: {email}
         </Typography>
         </>
         )}

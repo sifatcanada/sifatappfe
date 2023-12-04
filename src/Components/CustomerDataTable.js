@@ -4,7 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { Grid } from '@mui/material';
 
-export default function CustomerDataTable({ first_name, last_name, phone, email, class_location, class_address, class_timing, student_age, package_name, package_qty, package_unit }) {
+export default function CustomerDataTable({ first_name, last_name, phone, email, class_location, class_address, class_timing, student_age, package_name, package_qty, package_type, semClassQty, package_unit }) {
   return (
     <>
     <Typography gutterBottom variant="h4" component="div" fontWeight="bold">
@@ -60,13 +60,13 @@ export default function CustomerDataTable({ first_name, last_name, phone, email,
             <b>Type: </b>{package_name}
             </Typography>
             <Typography variant="body2" color="text.primary" sx={{ padding: '5px' }}>
-            <b>Cost: </b>${package_qty * package_unit}
+            <b>Cost: </b>${(package_type === 'semester' ? semClassQty : package_qty) * package_unit}
             </Typography>
             <Typography variant="body2" color="text.primary" sx={{ padding: '5px' }}>
             <b>HST: </b>13%
             </Typography>
             <Typography variant="body1" color="text.primary" sx={{ padding: '5px' }}>
-            <b>Total: </b>${(package_qty * package_unit * 1.13).toFixed(2)} CAD
+            <b>Total: </b>${((package_type === 'semester' ? semClassQty : package_qty) * package_unit * 1.13).toFixed(2)} CAD
             </Typography>
           </CardContent>
       </Card>

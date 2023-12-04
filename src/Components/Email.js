@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export async function sendEmail(server_url, date, first_name, last_name, phone, recipient_email, sender_email, subject, location, address, class_timing, class_package, student_age, amount, transactionId) {
+export async function sendEmail(server_url, date, first_name, last_name, phone, recipient_email, sender_email, subject, location, address, class_timing, class_package, student_age, amount, transactionId, class_schedule, semester) {
     try {
       await axios.post(server_url+'/send-email', {
       date: date,
@@ -17,6 +17,8 @@ export async function sendEmail(server_url, date, first_name, last_name, phone, 
       student_age: student_age,
       amount: amount,
       transactionId: transactionId,
+      class_schedule: class_schedule,
+      semester: semester
       });
       console.log('Email sent successfully');
     } catch (error) {
