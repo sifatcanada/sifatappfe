@@ -18,7 +18,6 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { styled } from '@mui/system';
-import axios from 'axios';
 import { disclaimerTerms } from './disclaimer'
 import { sendEmail } from './Components/Email';
 import { getCurrentDate } from './Components/Date';
@@ -134,7 +133,7 @@ function App() {
       // Check if the current day matches with specified day (0 corresponds to Sunday, 1 to Monday, and so on)
       if (start.getDay() === day) {
         if (!dateObjects.includes((new Date(start)).toLocaleString('en-US', { timeZone: 'EST' }))) {
-            console.log("match found")
+            // console.log("match found")
             count++;
             availableDates.push(new Date(start)); // Save the date of each Monday
         }
@@ -430,15 +429,11 @@ function App() {
           <RadioGroup
           name="age-group"
           >
+            {jsonData.age_group.map((item) => (
               <div>
-                <FormControlLabel value="4-7" control={<Radio />} label="4-7 yrs" onChange={handleAge}/>
-              </div>
-              <div>
-                <FormControlLabel value="8-14" control={<Radio />} label="8-14 yrs" onChange={handleAge}/>
-              </div>
-              <div>
-                <FormControlLabel value="15+" control={<Radio />} label="15+ yrs" onChange={handleAge}/>
-              </div>
+              <FormControlLabel value={item.name} control={<Radio />} label={item.name + " yrs"} onChange={handleAge}/>
+            </div>
+            ))}
             </RadioGroup>
         </div>
       )}
@@ -449,15 +444,11 @@ function App() {
           <RadioGroup
           name="level"
           >
-              <div>
-                <FormControlLabel value="Beginner" control={<Radio />} label="Beginner" onChange={handleLevel}/>
+              {jsonData.level.map((item) => (
+                <div>
+                <FormControlLabel value={item.name} control={<Radio />} label={item.name} onChange={handleLevel}/>
               </div>
-              <div>
-                <FormControlLabel value="Intermediate" control={<Radio />} label="Intermediate" onChange={handleLevel}/>
-              </div>
-              <div>
-                <FormControlLabel value="Advance" control={<Radio />} label="Advance" onChange={handleLevel}/>
-              </div>
+              ))}
             </RadioGroup>
         </div>
       )}
