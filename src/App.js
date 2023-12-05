@@ -109,7 +109,7 @@ function App() {
   const [termsAccepted, setTermsAccepted] = useState(false);
   const [selectedClassPackage, setSelectedClassPackage] = useState({});
   const [selectedAgeGroup, setSelectedAgeGroup] = useState('');
-  const [semClassQty, setSemClassQty] = useState(0);
+  const [semClassQty, setSemClassQty] = useState(11);
   const [semAvailableDates, setSemAvailableDates] = useState([]);
   const [location, setLocation] = useState(''); 
   const [address, setAddress] = useState('');
@@ -219,7 +219,7 @@ function App() {
     const { count, availableDates } = calculateDays(jsonData.packages[1].start_date, jsonData.packages[1].end_date, class_time[0].class_day, jsonData.packages[1].excluded_dates);
     // console.log(count)
     // console.log(availableDates)
-    setSemClassQty(count)
+    // setSemClassQty(count)
     setSemAvailableDates(availableDates)
     class_time = []
     setStep('packages');
