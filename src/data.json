@@ -1,5 +1,5 @@
 {
-    "server_url": "https://sifatappbe-93ae17d29d70.herokuapp.com",
+    "server_url": "http://127.0.0.1:3001",
     "sender_email": "info@sifatcanada.com",
     "reg_email_subject": "Pre-Payment",
     "reg_payment_email_subject": "Thank you for registering with SIFAT",
