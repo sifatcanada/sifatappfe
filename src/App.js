@@ -22,6 +22,8 @@ import { disclaimerTerms } from './disclaimer'
 import { sendEmail } from './Components/Email';
 import { getCurrentDate } from './Components/Date';
 import { storeData } from './Components/GoogleSheetStore';
+import { startOfDay, isSunday, isMonday, isTuesday, isWednesday, isThursday, isFriday, isSaturday, format } from 'date-fns';
+import { utcToZonedTime, zonedTimeToUtc } from 'date-fns-tz';
 import './App.css';
 import jsonData from './data.json'; // Import the JSON file
 
@@ -125,27 +127,60 @@ function App() {
   var targetPackage = jsonData.packages
 
   const calculateDays = (startDate, endDate, day, excludedDates) => {
-    const start = new Date(startDate);
-    const end = new Date(endDate);
+    // console.log(day)
+    const easternTimeZone = 'America/New_York';
+
+    let start = utcToZonedTime(startOfDay(new Date(startDate)), easternTimeZone);
+    const end = utcToZonedTime(startOfDay(new Date(endDate)), easternTimeZone);
+    let todayDate = utcToZonedTime(startOfDay(new Date()), easternTimeZone);
+    
+    if (start.getTime() === todayDate.getTime()) {
+      start.setDate(start.getDate() + 1);
+    }
+    if (start < todayDate) {
+      start = todayDate;
+    }
     let count = 0;
     const availableDates = [];
-    const dateObjects = excludedDates.map((excludedDate) => (new Date(excludedDate)).toLocaleString('en-US', { timeZone: 'EST' }));
-    // Iterate through each day from start to end
+    // console.log(start)
+    // console.log(end)
+
+    const excludedDateObjects = excludedDates.map(excludedDate =>
+      utcToZonedTime(startOfDay(new Date(excludedDate)), easternTimeZone)
+    );
+
+    // console.log(excludedDateObjects)
+
     while (start <= end) {
-      // Check if the current day matches with specified day (0 corresponds to Sunday, 1 to Monday, and so on)
-      if (start.getDay() === day) {
-        if (!dateObjects.includes((new Date(start)).toLocaleString('en-US', { timeZone: 'EST' }))) {
-            // console.log("match found")
-            count++;
-            availableDates.push(new Date(start).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })); // Save the date of each Monday
-            //
-        }
+      const currentDate = start;
+
+      // Check if the current day matches the specified day
+      let isMatch = false;
+      switch (day) {
+        case 0: isMatch = isSunday(currentDate); break;
+        case 1: isMatch = isMonday(currentDate); break;
+        case 2: isMatch = isTuesday(currentDate); break;
+        case 3: isMatch = isWednesday(currentDate); break;
+        case 4: isMatch = isThursday(currentDate); break;
+        case 5: isMatch = isFriday(currentDate); break;
+        case 6: isMatch = isSaturday(currentDate); break;
+        default: isMatch = false;
       }
+
+      const currentDateTimeZone = utcToZonedTime(currentDate, easternTimeZone);
+
+      if (isMatch && !excludedDateObjects.some(excludedDate => excludedDate.getTime() === currentDateTimeZone.getTime())) {
+        count++;
+        availableDates.push(format(currentDateTimeZone, 'yyyy-MM-dd')); // You can adjust the date format as needed
+      }
+
       // Move to the next day
       start.setDate(start.getDate() + 1);
     }
+
     return { count, availableDates };
   };
+
 
   const handleClasses = (event) => {
     // console.log(event.target.value)
@@ -219,7 +254,7 @@ function App() {
     const { count, availableDates } = calculateDays(jsonData.packages[1].start_date, jsonData.packages[1].end_date, class_time[0].class_day, jsonData.packages[1].excluded_dates);
     // console.log(count)
     // console.log(availableDates)
-    // setSemClassQty(count)
+    setSemClassQty(count)
     setSemAvailableDates(availableDates)
     class_time = []
     setStep('packages');
