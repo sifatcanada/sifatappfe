@@ -547,8 +547,16 @@ function App() {
 
         {selectedCity[0].name === 'CAMBRIDGE' && (
             <div>
-              <p>Please visit Cambridge City <a rel="noopener noreferrer" target="_blank" href="https://www.cambridge.ca/en/index.aspx">Website</a> to register for Bhangra Dance Classes</p>
-            </div>
+            <Button
+              component="a"
+              href={selectedClassesByAgeLevelTiming[0].class_link}
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="contained"
+              sx={{ mt: 3, mb: 2 }}
+            >Proceed to Registration
+            </Button>
+          </div>
         )}
 
         {!(selectedCity[0].name === 'CAMBRIDGE' || selectedCity[0].name === 'CALEDON') && (
