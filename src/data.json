@@ -392,8 +392,8 @@
             "url" : "/sifat-site/static/images/image-button-background.jpg",
             "locations": [
                 {
-                    "name": "W.G JOHNSON CENTRE",
-                    "address" : "31 Kribs St, Cambridge, ON, N3C 2L3",
+                    "name": "CAMBRIDGE CENTRE OF ARTS",
+                    "address" : "60 Dickson St, Cambridge, ON N1R 8N1",
                     "classes" : [
                         {
                             "class_id": "CAMBRIDGE-BH-THU-01",
@@ -403,7 +403,7 @@
                             "class_level": ["Beginner"],
                             "age_group": ["4-7"],
                             "class_type": "Bhangra",
-                            "class_link": "NA"
+                            "class_link": "https://anc.ca.apm.activecommunities.com/cambridgeont/activity/search/detail/43044?onlineSiteId=0&from_original_cui=true"
                         },
                         {
                             "class_id": "CAMBRIDGE-BH-THU-02",
@@ -413,7 +413,7 @@
                             "class_level": ["Beginner", "Intermediate", "Advance"],
                             "age_group": ["8-14"],
                             "class_type": "Bhangra",
-                            "class_link": "NA"
+                            "class_link": "https://anc.ca.apm.activecommunities.com/cambridgeont/activity/search/detail/43049?onlineSiteId=0&from_original_cui=true"
                         },
                         {
                             "class_id": "CAMBRIDGE-BH-THU-03",
@@ -423,13 +423,13 @@
                             "class_level": ["Beginner", "Intermediate", "Advance"],
                             "age_group": ["15+"],
                             "class_type": "Bhangra",
-                            "class_link": "NA"
+                            "class_link": "https://anc.ca.apm.activecommunities.com/cambridgeont/activity/search/detail/43050?onlineSiteId=0&from_original_cui=true"
                         }
                     ]
                 },
                 {
-                    "name": "CAMBRIDGE CENTRE OF ARTS",
-                    "address" : "60 Dickson St, Cambridge, ON N1R 8N1",
+                    "name": "W.G JOHNSON CENTRE",
+                    "address" : "31 Kribs St, Cambridge, ON, N3C 2L3",
                     "classes" : [
                         {
                             "class_id": "CAMBRIDGE-BH-SAT-04",
@@ -439,7 +439,7 @@
                             "class_level": ["Beginner"],
                             "age_group": ["4-7"],
                             "class_type": "Bhangra",
-                            "class_link": "NA"
+                            "class_link": "https://anc.ca.apm.activecommunities.com/cambridgeont/activity/search/detail/42623?onlineSiteId=0&from_original_cui=true"
                         },
                         {
                             "class_id": "CAMBRIDGE-BH-SAT-05",
@@ -449,7 +449,7 @@
                             "class_level": ["Beginner", "Intermediate", "Advance"],
                             "age_group": ["8-14"],
                             "class_type": "Bhangra",
-                            "class_link": "NA"
+                            "class_link": "https://anc.ca.apm.activecommunities.com/cambridgeont/activity/search/detail/42624?onlineSiteId=0&from_original_cui=true"
                         },
                         {
                             "class_id": "CAMBRIDGE-BH-SAT-06",
@@ -459,7 +459,7 @@
                             "class_level": ["Beginner", "Intermediate", "Advance"],
                             "age_group": ["15+"],
                             "class_type": "Bhangra",
-                            "class_link": "NA"
+                            "class_link": "https://anc.ca.apm.activecommunities.com/cambridgeont/activity/search/detail/42625?onlineSiteId=0&from_original_cui=true"
                         }
                     ]
                 }
