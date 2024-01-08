@@ -477,6 +477,16 @@
                         {
                             "class_id": "MARKHAM-BH-SUN-01",
                             "class_name": "Bhangra Classes",
+                            "class_time": "Every Sunday | 9:30 to 10:30 am",
+                            "class_day": 0,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["15+"],
+                            "class_type": "Bhangra",
+                            "class_link": "NA"
+                        },
+                        {
+                            "class_id": "MARKHAM-BH-SUN-01",
+                            "class_name": "Bhangra Classes",
                             "class_time": "Every Sunday | 3:00 to 4:00 pm",
                             "class_day": 0,
                             "class_level": ["Beginner", "Intermediate", "Advance"],
