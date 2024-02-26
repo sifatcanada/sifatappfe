@@ -27,19 +27,66 @@
             "package_type_id": "PT-01"
         },
         {
-            "package_id": "SESSION-01",
-            "name": "WINTER 2024 SESSION",
-            "description": "SIFAT Winter 2024 package is for Jan - Mar 2024.",
+            "package_id": "SESSION-02",
+            "name": "SPRING 2024 SESSION",
+            "description": "SIFAT Spring 2024 package is for Apr - Jun 2024.",
             "type": "semester",
-            "start_date": "2024-01-08T00:00:00-05:00",
-            "end_date": "2024-03-31T00:00:00-05:00",
+            "start_date": "2024-04-03T00:00:00-05:00",
+            "end_date": "2024-06-24T00:00:00-05:00",
             "qty": 11,
             "unit": 17.5,
             "currency": "CAD",
             "excluded_dates": [
-                "2024-03-10T00:00:00-05:00",
-                "2024-03-11T00:00:00-05:00",
-                "2024-03-13T00:00:00-05:00"
+                "2024-04-01T00:00:00-05:00",
+                "2024-05-20T00:00:00-05:00",
+                "2024-05-22T00:00:00-05:00",
+                "2024-06-26T00:00:00-05:00",
+                "2024-05-19T00:00:00-05:00",
+                "2024-06-30T00:00:00-05:00"
+            ],
+            "package_type_id": "PT-02"
+        },
+        {
+            "package_id": "SESSION-03",
+            "name": "SUMMER 2024 SESSION",
+            "description": "SIFAT Summer 2024 package is for Jul - Aug 2024.",
+            "type": "semester",
+            "start_date": "2024-07-07T00:00:00-05:00",
+            "end_date": "2024-08-28T00:00:00-05:00",
+            "qty": 7,
+            "unit": 17.5,
+            "currency": "CAD",
+            "excluded_dates": [
+                "2024-07-01T00:00:00-05:00",
+                "2024-07-29T00:00:00-05:00",
+                "2024-07-03T00:00:00-05:00",
+                "2024-07-31T00:00:00-05:00",
+                "2024-07-28T00:00:00-05:00"
+            ],
+            "package_type_id": "PT-02"
+        },
+        {
+            "package_id": "SESSION-04",
+            "name": "SPRING + SUMMER 2024",
+            "description": "SIFAT Spring + Summer 2024 package is for Apr - Aug 2024.",
+            "type": "semester",
+            "start_date": "2024-04-03T00:00:00-05:00",
+            "end_date": "2024-08-28T00:00:00-05:00",
+            "qty": 18,
+            "unit": 17.5,
+            "currency": "CAD",
+            "excluded_dates": [
+                "2024-04-01T00:00:00-05:00",
+                "2024-05-20T00:00:00-05:00",
+                "2024-05-22T00:00:00-05:00",
+                "2024-06-26T00:00:00-05:00",
+                "2024-05-19T00:00:00-05:00",
+                "2024-06-30T00:00:00-05:00",
+                "2024-07-01T00:00:00-05:00",
+                "2024-07-29T00:00:00-05:00",
+                "2024-07-03T00:00:00-05:00",
+                "2024-07-31T00:00:00-05:00",
+                "2024-07-28T00:00:00-05:00"
             ],
             "package_type_id": "PT-02"
         }
