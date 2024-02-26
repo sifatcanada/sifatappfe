@@ -244,8 +244,7 @@ function App() {
 
   const handleClassTimingChange = (event) => {
     let class_time = []
-    // let json_packages = []
-    // json_packages = jsonData.packages
+    
     selectedClassesByAgeLevel.filter((items) => {
       if(items.class_id === event.target.value) {
         class_time.push(items)
@@ -255,14 +254,8 @@ function App() {
     setClassTiming(class_time[0].class_time + " | " +  class_time[0].class_type);
     
     jsonData.packages.forEach(item => {
-      
-        // console.log(item.type);
-        const { count, availableDates } = calculateDays(item.start_date, item.end_date, class_time[0].class_day, item.excluded_dates);
-        // setSemClassQty(count)
-        // setSemAvailableDates(availableDates)
-        // json_packages['qty'] = count
-        // json_packages['available_dates'] = availableDates
-        // console.log(availableDates)
+
+        const { count, availableDates } = calculateDays(item.start_date, item.end_date, class_time[0].class_day, item.excluded_dates);  
         const newItem = { package_id: item.package_id, dts: availableDates, class_count: count };
 
         setAllAvailDates(prevState => ({
@@ -272,23 +265,12 @@ function App() {
       
       
     });
-    // jsonData.packages = json_packages
-
-    // console.log(jsonData.packages)
-    // console.log(allAvailDates)
-    
-    // const { count, availableDates } = calculateDays(jsonData.packages[1].start_date, jsonData.packages[1].end_date, class_time[0].class_day, jsonData.packages[1].excluded_dates);
-    // console.log(count)
-    // console.log(availableDates)
-    // setSemClassQty(count)
-    // setSemAvailableDates(availableDates)
     class_time = []
     setStep('packages');
   };
 
   const handlePackageType = (event) => {
-    console.log(event)
-    // let sel_package_dates = []
+    // console.log(event)
     setSelectedCard(event);
     setSelectedClassPackage(event)
     allAvailDates['avdts'].filter((avdtsitem) => {
@@ -297,10 +279,7 @@ function App() {
         setSemClassQty(avdtsitem.class_count)
       }
     });
-    // setSemAvailableDates(sel_package_dates)
-    // console.log(sel_package_dates)
-    // sel_package_dates = []
-    // console.log(jsonData.packages['availableDates'])
+    
     setStep('register');
   };
 
