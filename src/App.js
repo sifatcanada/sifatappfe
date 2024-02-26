@@ -113,6 +113,7 @@ function App() {
   const [selectedAgeGroup, setSelectedAgeGroup] = useState('');
   const [semClassQty, setSemClassQty] = useState(11);
   const [semAvailableDates, setSemAvailableDates] = useState([]);
+  const [allAvailDates, setAllAvailDates] = useState({avdts: [{"package_id": "", "dts": [], "class_count": 0}]});
   const [location, setLocation] = useState(''); 
   const [address, setAddress] = useState('');
   const [classTiming, setClassTiming] = useState('');
@@ -243,6 +244,8 @@ function App() {
 
   const handleClassTimingChange = (event) => {
     let class_time = []
+    // let json_packages = []
+    // json_packages = jsonData.packages
     selectedClassesByAgeLevel.filter((items) => {
       if(items.class_id === event.target.value) {
         class_time.push(items)
@@ -251,20 +254,53 @@ function App() {
     setSelectedClassesByAgeLevelTiming(class_time)
     setClassTiming(class_time[0].class_time + " | " +  class_time[0].class_type);
     
-    const { count, availableDates } = calculateDays(jsonData.packages[1].start_date, jsonData.packages[1].end_date, class_time[0].class_day, jsonData.packages[1].excluded_dates);
+    jsonData.packages.forEach(item => {
+      
+        // console.log(item.type);
+        const { count, availableDates } = calculateDays(item.start_date, item.end_date, class_time[0].class_day, item.excluded_dates);
+        // setSemClassQty(count)
+        // setSemAvailableDates(availableDates)
+        // json_packages['qty'] = count
+        // json_packages['available_dates'] = availableDates
+        // console.log(availableDates)
+        const newItem = { package_id: item.package_id, dts: availableDates, class_count: count };
+
+        setAllAvailDates(prevState => ({
+          ...prevState,
+          avdts: [...prevState.avdts, newItem]
+        }));
+      
+      
+    });
+    // jsonData.packages = json_packages
+
+    // console.log(jsonData.packages)
+    // console.log(allAvailDates)
+    
+    // const { count, availableDates } = calculateDays(jsonData.packages[1].start_date, jsonData.packages[1].end_date, class_time[0].class_day, jsonData.packages[1].excluded_dates);
     // console.log(count)
     // console.log(availableDates)
-    setSemClassQty(count)
-    setSemAvailableDates(availableDates)
+    // setSemClassQty(count)
+    // setSemAvailableDates(availableDates)
     class_time = []
     setStep('packages');
   };
 
   const handlePackageType = (event) => {
-    // console.log(event)
+    console.log(event)
+    // let sel_package_dates = []
     setSelectedCard(event);
     setSelectedClassPackage(event)
-    // console.log(selectedClassPackage)
+    allAvailDates['avdts'].filter((avdtsitem) => {
+      if(avdtsitem.package_id === event.package_id) {
+        setSemAvailableDates(avdtsitem.dts)
+        setSemClassQty(avdtsitem.class_count)
+      }
+    });
+    // setSemAvailableDates(sel_package_dates)
+    // console.log(sel_package_dates)
+    // sel_package_dates = []
+    // console.log(jsonData.packages['availableDates'])
     setStep('register');
   };
 
@@ -567,7 +603,7 @@ function App() {
                   <Grid item>
                     <ActionCard
                       item={item}
-                      semClassQty={semClassQty}
+                      semClassQty={(allAvailDates['avdts'].find(avdtsitem => avdtsitem.package_id === item.package_id)).class_count}
                       onClick={handlePackageType}
                       selected={selectedCard === item}
                     />
