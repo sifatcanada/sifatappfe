@@ -141,7 +141,7 @@
                             "class_time": "Every Wednesday | 6:45 to 7:45 pm",
                             "class_day": 3,
                             "class_level": ["Beginner", "Intermediate", "Advance"],
-                            "age_group": ["8-14", "15+"],
+                            "age_group": ["4-7", "8-14", "15+"],
                             "class_type": "Bhangra",
                             "class_link": "NA"
                         },
@@ -151,7 +151,7 @@
                             "class_time": "Every Wednesday | 7:45 to 8:45 pm",
                             "class_day": 3,
                             "class_level": ["Beginner", "Intermediate", "Advance"],
-                            "age_group": ["8-14", "15+"],
+                            "age_group": ["4-7", "8-14", "15+"],
                             "class_type": "Giddha",
                             "class_link": "NA"
                         }
@@ -275,7 +275,7 @@
                             "class_level": ["Intermediate", "Advance"],
                             "age_group": ["8-14"],
                             "class_type": "Bhangra",
-                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=8662b28c-5ba5-4917-9936-9c616d0912eb&redirectedFromEmbededMode=False&courseId=f6fd555e-d731-4c47-8b1c-c112d9f26f0c"
+                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=8662b28c-5ba5-4917-9936-9c616d0912eb&redirectedFromEmbededMode=False&courseId=6faae45e-8193-49fb-88f3-968f87fd89d0"
                         },
                         {
                             "class_id": "CALEDON-BU-TUE-02",
@@ -285,7 +285,7 @@
                             "class_level": ["Beginner", "Intermediate", "Advance"],
                             "age_group": ["15+"],
                             "class_type": "Bhangra",
-                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=8662b28c-5ba5-4917-9936-9c616d0912eb&redirectedFromEmbededMode=False&courseId=70977b37-84bc-4b74-b6ca-e9bd27c0124d"
+                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=8662b28c-5ba5-4917-9936-9c616d0912eb&redirectedFromEmbededMode=False&courseId=6f054cfb-5a92-4a01-ab90-2ac1d18e0415"
                         },
                         {
                             "class_id": "CALEDON-BH-SUN-03",
@@ -295,7 +295,7 @@
                             "class_level": ["Beginner"],
                             "age_group": ["4-7"],
                             "class_type": "Bhangra",
-                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=8662b28c-5ba5-4917-9936-9c616d0912eb&redirectedFromEmbededMode=False&courseId=d62a9ff3-9adb-4b2e-a70c-13c6f97cf004"
+                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=8662b28c-5ba5-4917-9936-9c616d0912eb&redirectedFromEmbededMode=False&courseId=a55a11de-a2dc-4f2f-9e90-9ddd6e7d3120"
                         },
                         {
                             "class_id": "CALEDON-BH-SUN-04",
@@ -305,7 +305,7 @@
                             "class_level": ["Beginner", "Intermediate"],
                             "age_group": ["8-14"],
                             "class_type": "Bhangra",
-                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=8662b28c-5ba5-4917-9936-9c616d0912eb&redirectedFromEmbededMode=False&courseId=3167fa53-3e29-4a24-a971-e4fe67d63cc4"
+                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=8662b28c-5ba5-4917-9936-9c616d0912eb&redirectedFromEmbededMode=False&courseId=cd51367b-76e7-41b8-85da-9d63b43a7ed1"
                         },
                         {
                             "class_id": "CALEDON-BH-SUN-05",
@@ -315,7 +315,7 @@
                             "class_level": ["Intermediate", "Advance"],
                             "age_group": ["4-7"],
                             "class_type": "Bhangra",
-                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=8662b28c-5ba5-4917-9936-9c616d0912eb&redirectedFromEmbededMode=False&courseId=08d307ff-8707-4de9-927c-8cc01fb09c4e"
+                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=8662b28c-5ba5-4917-9936-9c616d0912eb&redirectedFromEmbededMode=False&courseId=1c43f59b-2119-4f3a-b55e-2b5f841d07c1"
                         }
                     ]
                 },
@@ -331,7 +331,7 @@
                             "class_level": ["Beginner", "Intermediate"],
                             "age_group": ["4-7"],
                             "class_type": "Bhangra",
-                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=8662b28c-5ba5-4917-9936-9c616d0912eb&redirectedFromEmbededMode=False&courseId=7b8df936-873c-4c6f-b428-08a8bf6abaea"
+                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=8662b28c-5ba5-4917-9936-9c616d0912eb&redirectedFromEmbededMode=False&courseId=c1cc8bf8-1f73-4340-88f5-b7840c057d7e"
                         },
                         {
                             "class_id": "CALEDON-BH-SAT-07",
@@ -341,7 +341,7 @@
                             "class_level": ["Beginner"],
                             "age_group": ["8-14", "15+"],
                             "class_type": "Bhangra",
-                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=8662b28c-5ba5-4917-9936-9c616d0912eb&redirectedFromEmbededMode=False&courseId=25c5bbb1-c94e-4834-bd58-957f397aba37"
+                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=8662b28c-5ba5-4917-9936-9c616d0912eb&redirectedFromEmbededMode=False&courseId=368df1b5-4ba3-49df-82b4-ca6dec9310a1"
                         },
                         {
                             "class_id": "CALEDON-BH-SAT-08",
@@ -351,7 +351,7 @@
                             "class_level": ["Intermediate", "Advance"],
                             "age_group": ["4-7"],
                             "class_type": "Bhangra",
-                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=8662b28c-5ba5-4917-9936-9c616d0912eb&redirectedFromEmbededMode=False&courseId=6d5ee2ef-133c-4d5d-ade3-4b5d26f09547"
+                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=8662b28c-5ba5-4917-9936-9c616d0912eb&redirectedFromEmbededMode=False&courseId=b68fea0c-fce7-44dd-b96f-abd863a89e2c"
                         },
                         {
                             "class_id": "CALEDON-BH-SAT-09",
@@ -361,7 +361,7 @@
                             "class_level": ["Intermediate", "Advance"],
                             "age_group": ["8-14", "15+"],
                             "class_type": "Bhangra",
-                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=8662b28c-5ba5-4917-9936-9c616d0912eb&redirectedFromEmbededMode=False&courseId=59b8f9f3-9003-4dbe-bd2b-15f49e7b8d63"
+                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=8662b28c-5ba5-4917-9936-9c616d0912eb&redirectedFromEmbededMode=False&courseId=76338954-4e86-425d-8dc0-12ae95ac42e7"
                         }
                     ]
                 }
@@ -560,7 +560,7 @@
                             "class_time": "Every Sunday | 11:30 to 12:30 pm",
                             "class_day": 0,
                             "class_level": ["Beginner", "Intermediate", "Advance"],
-                            "age_group": ["8-14", "15+"],
+                            "age_group": ["4-7", "8-14", "15+"],
                             "class_type": "Bhangra",
                             "class_link": "NA"
                         },
@@ -570,7 +570,7 @@
                             "class_time": "Every Sunday | 12:30 to 1:30 pm",
                             "class_day": 0,
                             "class_level": ["Beginner", "Intermediate", "Advance"],
-                            "age_group": ["8-14", "15+"],
+                            "age_group": ["4-7", "8-14", "15+"],
                             "class_type": "Giddha",
                             "class_link": "NA"
                         }
