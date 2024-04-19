@@ -136,12 +136,22 @@
                     "address" : "71 Delta park Blvd, Unit 1A, Brampton,ON, L6T 5E7",
                     "classes" : [
                         {
+                            "class_id": "BRAMPTON-BH-WED-03",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Wednesday | 5:45 to 6:45 pm",
+                            "class_day": 3,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["4-7"],
+                            "class_type": "Bhangra",
+                            "class_link": "NA"
+                        },
+                        {
                             "class_id": "BRAMPTON-BH-WED-01",
                             "class_name": "Bhangra Classes",
                             "class_time": "Every Wednesday | 6:45 to 7:45 pm",
                             "class_day": 3,
                             "class_level": ["Beginner", "Intermediate", "Advance"],
-                            "age_group": ["4-7", "8-14", "15+"],
+                            "age_group": ["8-14", "15+"],
                             "class_type": "Bhangra",
                             "class_link": "NA"
                         },
