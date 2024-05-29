@@ -184,7 +184,7 @@
                         {
                             "class_id": "BRAMPTON-BH-MON-04",
                             "class_name": "Bhangra Classes",
-                            "class_time": "Every Monday | 5:30 to 6:30 pm",
+                            "class_time": "Every Monday | 6:00 to 7:00 pm",
                             "class_day": 1,
                             "class_level": ["Beginner", "Intermediate", "Advance"],
                             "age_group": ["4-7"],
@@ -194,7 +194,7 @@
                         {
                             "class_id": "BRAMPTON-BH-MON-05",
                             "class_name": "Bhangra Classes",
-                            "class_time": "Every Monday | 5:30 to 6:30 pm",
+                            "class_time": "Every Monday | 6:00 to 7:00 pm",
                             "class_day": 1,
                             "class_level": ["Beginner", "Intermediate", "Advance"],
                             "age_group": ["8-14"],
@@ -214,7 +214,7 @@
                         {
                             "class_id": "BRAMPTON-BH-MON-07",
                             "class_name": "Bhangra Classes",
-                            "class_time": "Every Monday | 7:30 to 8:30 pm",
+                            "class_time": "Every Monday | 8:00 to 9:00 pm",
                             "class_day": 1,
                             "class_level": ["Intermediate", "Advance"],
                             "age_group": ["15+"],
@@ -224,7 +224,7 @@
                         {
                             "class_id": "BRAMPTON-BH-MON-08",
                             "class_name": "Giddha Classes",
-                            "class_time": "Every Monday | 6:30 to 7:30 pm",
+                            "class_time": "Every Monday | 7:00 to 8:00 pm",
                             "class_day": 1,
                             "class_level": ["Beginner", "Intermediate", "Advance"],
                             "age_group": ["8-14", "15+"],
