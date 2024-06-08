@@ -404,38 +404,28 @@
             "url" : "/sifat-site/static/images/image-button-background.jpg",
             "locations": [
                 {
-                    "name": "CAMBRIDGE CENTRE OF ARTS",
-                    "address" : "60 Dickson St, Cambridge, ON N1R 8N1",
+                    "name": "DAVID DURWARD CENTRE",
+                    "address" : "62 Dickson St, Cambridge, ON N1R 1T8",
                     "classes" : [
                         {
                             "class_id": "CAMBRIDGE-BH-THU-01",
                             "class_name": "Bhangra Classes",
-                            "class_time": "Every Thursday | 5:45 to 6:30 pm",
-                            "class_day": 4,
-                            "class_level": ["Beginner"],
+                            "class_time": "Every Wednesday | 6:45 to 7:30 pm",
+                            "class_day": 3,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
                             "age_group": ["4-7"],
                             "class_type": "Bhangra",
-                            "class_link": "https://anc.ca.apm.activecommunities.com/cambridgeont/activity/search/detail/43045?onlineSiteId=0&from_original_cui=true"
+                            "class_link": "https://anc.ca.apm.activecommunities.com/cambridgeont/activity/search/detail/48740?onlineSiteId=0&from_original_cui=true"
                         },
                         {
                             "class_id": "CAMBRIDGE-BH-THU-02",
                             "class_name": "Bhangra Classes",
-                            "class_time": "Every Thursday | 6:30 to 7:15 pm",
-                            "class_day": 4,
+                            "class_time": "Every Wednesday | 7:30 to 8:15 pm",
+                            "class_day": 3,
                             "class_level": ["Beginner", "Intermediate", "Advance"],
-                            "age_group": ["8-14"],
+                            "age_group": ["8+"],
                             "class_type": "Bhangra",
-                            "class_link": "https://anc.ca.apm.activecommunities.com/cambridgeont/activity/search/detail/43046?onlineSiteId=0&from_original_cui=true"
-                        },
-                        {
-                            "class_id": "CAMBRIDGE-BH-THU-03",
-                            "class_name": "Bhangra Classes",
-                            "class_time": "Every Thursday | 7:15 to 8:00 pm",
-                            "class_day": 4,
-                            "class_level": ["Beginner", "Intermediate", "Advance"],
-                            "age_group": ["15+"],
-                            "class_type": "Bhangra",
-                            "class_link": "https://anc.ca.apm.activecommunities.com/cambridgeont/activity/search/detail/43047?onlineSiteId=0&from_original_cui=true"
+                            "class_link": "https://anc.ca.apm.activecommunities.com/cambridgeont/activity/search/detail/48741?onlineSiteId=0&from_original_cui=true"
                         }
                     ]
                 }
