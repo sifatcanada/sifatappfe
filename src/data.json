@@ -320,16 +320,6 @@
                             "age_group": ["8-14", "15+"],
                             "class_type": "Bhangra",
                             "class_link": "NA"
-                        },
-                        {
-                            "class_id": "OAKVILLE-BH-SUN-02",
-                            "class_name": "Bhangra Classes",
-                            "class_time": "Every Sunday | 7:00 to 8:00 pm",
-                            "class_day": 0,
-                            "class_level": ["Beginner"],
-                            "age_group": ["4-7", "8-14", "15+"],
-                            "class_type": "Bhangra",
-                            "class_link": "NA"
                         }
                     ]
                 }
