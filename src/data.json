@@ -28,8 +28,8 @@
         },
         {
             "package_id": "SESSION-04",
-            "name": "WINTER 2024 SESSION",
-            "description": "SIFAT Winter 2024 package is for Sep - Dec 2024.",
+            "name": "FALL 2024 SESSION",
+            "description": "SIFAT Fall 2024 package is for Sep - Dec 2024.",
             "type": "semester",
             "start_date": "2024-09-08T00:00:00-05:00",
             "end_date": "2024-12-11T00:00:00-05:00",
