@@ -127,16 +127,6 @@
                     "address" : "1 Nelson St W, Suite 11B, Brampton, ON L6X 3E4, ON",
                     "classes" : [
                         {
-                            "class_id": "BRAMPTON-BH-SUN-03",
-                            "class_name": "Bhangra Classes",
-                            "class_time": "Every Sunday | 1:30 to 2:30 pm",
-                            "class_day": 0,
-                            "class_level": ["Beginner", "Intermediate", "Advance"],
-                            "age_group": ["8-14", "15+"],
-                            "class_type": "Bhangra",
-                            "class_link": "NA"
-                        },
-                        {
                             "class_id": "BRAMPTON-BH-MON-04",
                             "class_name": "Bhangra Classes",
                             "class_time": "Every Monday | 6:00 to 7:00 pm",
@@ -169,39 +159,6 @@
                     ]
                 }
             ]  
-        },
-        { 
-            "name": "MISSISSAUGA",
-            "city": "MISSISSAUGA",
-            "url" : "/sifat-site/static/images/image-button-background.jpg",
-            "locations": [
-                {
-                    "name": "MISSISSAUGA",
-                    "address" : "1550 S Gateway Rd, Unit 306, Mississauga, ON, L4W 5K3",
-                    "classes" : [
-                        {
-                            "class_id": "MISSISSAUGA-BH-SUN-01",
-                            "class_name": "Bhangra Classes",
-                            "class_time": "Every Sunday | 4:00 to 5:00 pm",
-                            "class_day": 0,
-                            "class_level": ["Beginner", "Intermediate", "Advance"],
-                            "age_group": ["4-7", "8-14", "15+"],
-                            "class_type": "Bhangra",
-                            "class_link": "NA"
-                        },
-                        {
-                            "class_id": "MISSISSAUGA-GI-SUN-01",
-                            "class_name": "Giddha Classes",
-                            "class_time": "Every Sunday | 3:00 to 4:00 pm",
-                            "class_day": 0,
-                            "class_level": ["Beginner", "Intermediate", "Advance"],
-                            "age_group": ["4-7", "8-14", "15+"],
-                            "class_type": "Giddha",
-                            "class_link": "NA"
-                        }
-                    ]
-                }
-            ]
         },
         { 
             "name": "CALEDON",
@@ -250,7 +207,7 @@
                             "class_level": ["Beginner", "Intermediate"],
                             "age_group": ["8-14"],
                             "class_type": "Bhangra",
-                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=8662b28c-5ba5-4917-9936-9c616d0912eb&redirectedFromEmbededMode=False&courseId=cd51367b-76e7-41b8-85da-9d63b43a7ed1"
+                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=8662b28c-5ba5-4917-9936-9c616d0912eb&redirectedFromEmbededMode=False&courseId=7383e489-3527-4494-9f49-56352e536c6b"
                         },
                         {
                             "class_id": "CALEDON-BH-SUN-05",
@@ -363,16 +320,6 @@
                             "age_group": ["8-14", "15+"],
                             "class_type": "Bhangra",
                             "class_link": "NA"
-                        },
-                        {
-                            "class_id": "OAKVILLE-BH-SUN-02",
-                            "class_name": "Bhangra Classes",
-                            "class_time": "Every Sunday | 7:00 to 8:00 pm",
-                            "class_day": 0,
-                            "class_level": ["Beginner"],
-                            "age_group": ["4-7", "8-14", "15+"],
-                            "class_type": "Bhangra",
-                            "class_link": "NA"
                         }
                     ]
                 }
@@ -433,7 +380,7 @@
                         {
                             "class_id": "MARKHAM-BH-SUN-02",
                             "class_name": "Bhangra Classes",
-                            "class_time": "Every Sunday | 3:00 to 4:00 pm",
+                            "class_time": "Every Sunday | 3:30 to 4:30 pm",
                             "class_day": 0,
                             "class_level": ["Beginner", "Intermediate", "Advance"],
                             "age_group": ["8-14", "15+"],
