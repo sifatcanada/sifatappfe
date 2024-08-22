@@ -211,7 +211,7 @@
                         {
                             "class_id": "CALEDON-BH-SUN-04",
                             "class_name": "Bhangra Classes",
-                            "class_time": "Every Sunday | 11:00 to 12:00 noon",
+                            "class_time": "Every Sunday | 11:00 to 12:00 pm",
                             "class_day": 0,
                             "class_level": ["Beginner", "Intermediate"],
                             "age_group": ["8-14"],
@@ -300,7 +300,7 @@
                         {
                             "class_id": "ORANGEVILLE-BH-SUN-02",
                             "class_name": "Bhangra Classes",
-                            "class_time": "Every Sunday | 11:00 to 12:00 noon",
+                            "class_time": "Every Sunday | 11:00 to 12:00 pm",
                             "class_day": 0,
                             "class_level": ["Beginner"],
                             "age_group": ["4-7", "8-14", "15+"],
