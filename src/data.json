@@ -12,21 +12,6 @@
     "twitter_link": "https://twitter.com/sifatcanada?lang=en",
     "packages": [
         {
-            "package_id": "PASS-01",
-            "name": "SIFAT PASS",
-            "description": "SIFAT Pass consists of 4 classes and can be used any time in the specific registered class",
-            "type": "pass",
-            "start_date": "NA",
-            "end_date": "NA",
-            "qty": 4,
-            "unit": 22.5,
-            "currency": "CAD",
-            "excluded_dates": [
-                "NA"
-            ],
-            "package_type_id": "PT-01"
-        },
-        {
             "package_id": "SESSION-04",
             "name": "FALL 2024 SESSION",
             "description": "SIFAT Fall 2024 package is for Sep - Dec 2024.",
@@ -178,6 +163,29 @@
                     ]
                 }
             ]  
+        },
+        { 
+            "name": "MISSISSAUGA",
+            "city": "MISSISSAUGA",
+            "url" : "/sifat-site/static/images/image-button-background.jpg",
+            "locations": [
+                {
+                    "name": "MISSISSAUGA",
+                    "address" : "560 Courtneypark Dr West, Mississauga, L5W 1L9",
+                    "classes" : [
+                        {
+                            "class_id": "MISSISSAUGA-BH-SUN-01",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Sunday | 4:00 to 5:00 pm",
+                            "class_day": 0,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["4-7", "8-14", "15+"],
+                            "class_type": "Bhangra",
+                            "class_link": "NA"
+                        }
+                    ]
+                }
+            ]
         },
         { 
             "name": "CALEDON",
