@@ -12,6 +12,21 @@
     "twitter_link": "https://twitter.com/sifatcanada?lang=en",
     "packages": [
         {
+            "package_id": "PASS-01",
+            "name": "SIFAT PASS",
+            "description": "SIFAT Pass consists of 4 classes and can be used any time in the specific registered class",
+            "type": "pass",
+            "start_date": "NA",
+            "end_date": "NA",
+            "qty": 4,
+            "unit": 22.5,
+            "currency": "CAD",
+            "excluded_dates": [
+                "NA"
+            ],
+            "package_type_id": "PT-01"
+        },
+        {
             "package_id": "SESSION-04",
             "name": "FALL 2024 SESSION",
             "description": "SIFAT Fall 2024 package is for Sep - Dec 2024.",
