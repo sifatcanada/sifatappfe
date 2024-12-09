@@ -153,7 +153,7 @@
                         {
                             "class_id": "BRAMPTON-BH-MON-03",
                             "class_name": "Bhangra Classes",
-                            "class_time": "Every Sunday | 1:30 to 2:30 pm",
+                            "class_time": "Every Sunday | 12:00 to 1:00 pm",
                             "class_day": 0,
                             "class_level": ["Beginner", "Intermediate", "Advance"],
                             "age_group": ["4-7", "8-14", "15+"],
@@ -188,6 +188,22 @@
                             "class_level": ["Beginner", "Intermediate", "Advance"],
                             "age_group": ["8-14", "15+"],
                             "class_type": "Giddha",
+                            "class_link": "NA"
+                        }
+                    ]
+                },
+                {
+                    "name": "BRAMPTON WEST",
+                    "address" : "1 Nelson St W, Suite 11B, Brampton, ON L6X 3E4, ON",
+                    "classes" : [
+                        {
+                            "class_id": "BRAMPTON-BH-MON-03",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Sunday | 2:00 to 3:00 pm",
+                            "class_day": 0,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["4-7", "8-14", "15+"],
+                            "class_type": "Bhangra",
                             "class_link": "NA"
                         }
                     ]
