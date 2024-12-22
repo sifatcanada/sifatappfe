@@ -123,6 +123,26 @@
                             "class_link": "NA"
                         },
                         {
+                            "class_id": "BRAMPTON-BL-TUE-01",
+                            "class_name": "Bollywood Classes",
+                            "class_time": "Every Tuesday | 6:30 to 7:30 pm",
+                            "class_day": 2,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["4-7", "8-14", "15+"],
+                            "class_type": "Bollywood",
+                            "class_link": "NA"
+                        },
+                        {
+                            "class_id": "BRAMPTON-BL-SAT-02",
+                            "class_name": "Bollywood Classes",
+                            "class_time": "Every Saturday | 12:30 to 1:30 pm",
+                            "class_day": 6,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["4-7", "8-14", "15+"],
+                            "class_type": "Bollywood",
+                            "class_link": "NA"
+                        },
+                        {
                             "class_id": "BRAMPTON-BH-MON-03",
                             "class_name": "Bhangra Classes",
                             "class_time": "Every Sunday | 12:00 to 1:00 pm",
@@ -275,8 +295,8 @@
                             "class_name": "Bhangra Classes",
                             "class_time": "Every Saturday | 3:00 to 4:00 pm",
                             "class_day": 6,
-                            "class_level": ["Beginner", "Intermediate"],
-                            "age_group": ["4-7"],
+                            "class_level": ["Beginner"],
+                            "age_group": ["8-14"],
                             "class_type": "Bhangra",
                             "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=2eec81dc-9404-4568-9acd-0b371eef6faf&redirectedFromEmbededMode=False&courseId=20a94d11-9d1e-4984-a205-6896b6720697"
                         },
@@ -398,6 +418,16 @@
                             "age_group": ["15+"],
                             "class_type": "Bhangra",
                             "class_link": "https://anc.ca.apm.activecommunities.com/cambridgeont/activity/search/detail/47582?onlineSiteId=0&from_original_cui=true"
+                        },
+                        {
+                            "class_id": "CAMBRIDGE-BL-THU-01",
+                            "class_name": "Bollywood Classes",
+                            "class_time": "Every Thursday | 8:00 to 8:45 pm",
+                            "class_day": 4,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["4-7", "8-14", "15+"],
+                            "class_type": "Bollywood",
+                            "class_link": "https://anc.ca.apm.activecommunities.com/cambridgeont/activity/search/detail/52684?onlineSiteId=0&from_original_cui=true"
                         }
                     ]
                 }
@@ -448,7 +478,7 @@
                         {
                             "class_id": "LONDON-BH-SUN-01",
                             "class_name": "Bhangra Classes",
-                            "class_time": "Every Sunday | 10:30 to 11:30 am",
+                            "class_time": "Every Sunday | 12:30 to 1:30 pm",
                             "class_day": 0,
                             "class_level": ["Beginner"],
                             "age_group": ["4-7", "8-14", "15+"],
@@ -468,7 +498,7 @@
                         {
                             "class_id": "LONDON-GI-SUN-01",
                             "class_name": "Giddha Classes",
-                            "class_time": "Every Sunday | 12:30 to 1:30 pm",
+                            "class_time": "Every Sunday | 1:30 to 2:30 pm",
                             "class_day": 0,
                             "class_level": ["Beginner", "Intermediate", "Advance"],
                             "age_group": ["4-7", "8-14", "15+"],
