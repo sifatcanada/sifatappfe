@@ -93,6 +93,46 @@
                     "address" : "Unit 9B, 8 Automatic Rd, Brampton, ON, L6S 5N4",
                     "classes" : [
                         {
+                            "class_id": "BRAMPTON-BH-MON-04",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Monday | 6:00 to 7:00 pm",
+                            "class_day": 1,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["4-7", "8-14"],
+                            "class_type": "Bhangra",
+                            "class_link": "NA"
+                        },
+                        {
+                            "class_id": "BRAMPTON-BH-MON-08",
+                            "class_name": "Giddha Classes",
+                            "class_time": "Every Monday | 7:00 to 8:00 pm",
+                            "class_day": 1,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["8-14", "15+"],
+                            "class_type": "Giddha",
+                            "class_link": "NA"
+                        },
+                        {
+                            "class_id": "BRAMPTON-BH-MON-07",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Monday | 8:00 to 9:00 pm",
+                            "class_day": 1,
+                            "class_level": ["Intermediate", "Advance"],
+                            "age_group": ["15+"],
+                            "class_type": "Bhangra",
+                            "class_link": "NA"
+                        },
+                        {
+                            "class_id": "BRAMPTON-BL-TUE-01",
+                            "class_name": "Bollywood Classes",
+                            "class_time": "Every Tuesday | 6:30 to 7:30 pm",
+                            "class_day": 2,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["4-7", "8-14", "15+"],
+                            "class_type": "Bollywood",
+                            "class_link": "NA"
+                        },
+                        {
                             "class_id": "BRAMPTON-BH-WED-03",
                             "class_name": "Bhangra Classes",
                             "class_time": "Every Wednesday | 5:30 to 6:30 pm",
@@ -123,16 +163,6 @@
                             "class_link": "NA"
                         },
                         {
-                            "class_id": "BRAMPTON-BL-TUE-01",
-                            "class_name": "Bollywood Classes",
-                            "class_time": "Every Tuesday | 6:30 to 7:30 pm",
-                            "class_day": 2,
-                            "class_level": ["Beginner", "Intermediate", "Advance"],
-                            "age_group": ["4-7", "8-14", "15+"],
-                            "class_type": "Bollywood",
-                            "class_link": "NA"
-                        },
-                        {
                             "class_id": "BRAMPTON-BL-SAT-02",
                             "class_name": "Bollywood Classes",
                             "class_time": "Every Saturday | 12:30 to 1:30 pm",
@@ -150,36 +180,6 @@
                             "class_level": ["Beginner", "Intermediate", "Advance"],
                             "age_group": ["4-7", "8-14", "15+"],
                             "class_type": "Bhangra",
-                            "class_link": "NA"
-                        },
-                        {
-                            "class_id": "BRAMPTON-BH-MON-04",
-                            "class_name": "Bhangra Classes",
-                            "class_time": "Every Monday | 6:00 to 7:00 pm",
-                            "class_day": 1,
-                            "class_level": ["Beginner", "Intermediate", "Advance"],
-                            "age_group": ["4-7", "8-14"],
-                            "class_type": "Bhangra",
-                            "class_link": "NA"
-                        },
-                        {
-                            "class_id": "BRAMPTON-BH-MON-07",
-                            "class_name": "Bhangra Classes",
-                            "class_time": "Every Monday | 8:00 to 9:00 pm",
-                            "class_day": 1,
-                            "class_level": ["Intermediate", "Advance"],
-                            "age_group": ["15+"],
-                            "class_type": "Bhangra",
-                            "class_link": "NA"
-                        },
-                        {
-                            "class_id": "BRAMPTON-BH-MON-08",
-                            "class_name": "Giddha Classes",
-                            "class_time": "Every Monday | 7:00 to 8:00 pm",
-                            "class_day": 1,
-                            "class_level": ["Beginner", "Intermediate", "Advance"],
-                            "age_group": ["8-14", "15+"],
-                            "class_type": "Giddha",
                             "class_link": "NA"
                         }
                     ]
@@ -476,21 +476,21 @@
                     "address" : "1106 Dearness Drive, London, ON, N6E 1N9",
                     "classes" : [
                         {
-                            "class_id": "LONDON-BH-SUN-01",
-                            "class_name": "Bhangra Classes",
-                            "class_time": "Every Sunday | 12:30 to 1:30 pm",
-                            "class_day": 0,
-                            "class_level": ["Beginner"],
-                            "age_group": ["4-7", "8-14", "15+"],
-                            "class_type": "Bhangra",
-                            "class_link": "NA"
-                        },
-                        {
                             "class_id": "LONDON-BH-SUN-02",
                             "class_name": "Bhangra Classes",
                             "class_time": "Every Sunday | 11:30 to 12:30 pm",
                             "class_day": 0,
                             "class_level": ["Intermediate", "Advance"],
+                            "age_group": ["4-7", "8-14", "15+"],
+                            "class_type": "Bhangra",
+                            "class_link": "NA"
+                        },
+                        {
+                            "class_id": "LONDON-BH-SUN-01",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Sunday | 12:30 to 1:30 pm",
+                            "class_day": 0,
+                            "class_level": ["Beginner"],
                             "age_group": ["4-7", "8-14", "15+"],
                             "class_type": "Bhangra",
                             "class_link": "NA"
