@@ -255,15 +255,14 @@ function App() {
     
     jsonData.packages.forEach(item => {
 
-        const { count, availableDates } = calculateDays(item.start_date, item.end_date, class_time[0].class_day, item.excluded_dates);  
-        const newItem = { package_id: item.package_id, dts: availableDates, class_count: count };
+      // console.log(item)
+      const { count, availableDates } = calculateDays(item.start_date, item.end_date, class_time[0].class_day, item.excluded_dates);
+      const newItem = { package_id: item.package_id, dts: availableDates, class_count: count };
 
-        setAllAvailDates(prevState => ({
-          ...prevState,
-          avdts: [...prevState.avdts, newItem]
-        }));
-      
-      
+      setAllAvailDates(prevState => ({
+        ...prevState,
+        avdts: [...prevState.avdts, newItem]
+      }));
     });
     class_time = []
     setStep('packages');
