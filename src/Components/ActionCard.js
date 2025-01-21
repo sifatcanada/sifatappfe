@@ -6,6 +6,7 @@ import { CardActionArea } from '@mui/material';
 
 export default function ActionCard({ item, semClassQty, onClick, selected }) {
   const description_postfix = (item.type === 'semester' ? "Total Classes : "+semClassQty+"" : "")
+  const amount = (item.type === 'semester' ? semClassQty : item.qty) * item.unit;
   return (
     <>
     <Card sx={{ maxWidth: 325, m: 2, border: "1px solid #1976D2", height: 175,  backgroundColor: selected ? '#1976D2' : 'white'}} variant="outlined" onClick={() => onClick(item)}>
@@ -18,7 +19,7 @@ export default function ActionCard({ item, semClassQty, onClick, selected }) {
             {item.description} {description_postfix}
           </Typography>
           <br></br>
-          ${(item.type === 'semester' ? semClassQty : item.qty) * item.unit} CAD + HST
+          ${amount.toFixed(2)} CAD + HST
         </CardContent>
       </CardActionArea>
     </Card>
