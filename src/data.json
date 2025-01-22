@@ -375,6 +375,16 @@
                             "age_group": ["4-7", "8-14", "15+"],
                             "class_type": "Bhangra",
                             "class_link": "NA"
+                        },
+                        {
+                            "class_id": "OAKVILLE-GH-SUN-01",
+                            "class_name": "Giddha Classes",
+                            "class_time": "Every Sunday | 6:00 to 7:00 pm",
+                            "class_day": 0,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["4-7", "8-14", "15+"],
+                            "class_type": "Giddha",
+                            "class_link": "NA"
                         }
                     ]
                 }
