@@ -183,22 +183,6 @@
                             "class_link": "NA"
                         }
                     ]
-                },
-                {
-                    "name": "BRAMPTON WEST",
-                    "address" : "1 Nelson St W, Suite 11B, Brampton, ON L6X 3E4, ON",
-                    "classes" : [
-                        {
-                            "class_id": "BRAMPTON-BH-MON-03",
-                            "class_name": "Bhangra Classes",
-                            "class_time": "Every Sunday | 2:00 to 3:00 pm",
-                            "class_day": 0,
-                            "class_level": ["Beginner", "Intermediate", "Advance"],
-                            "age_group": ["4-7", "8-14", "15+"],
-                            "class_type": "Bhangra",
-                            "class_link": "NA"
-                        }
-                    ]
                 }
             ]  
         },
@@ -369,7 +353,7 @@
                         {
                             "class_id": "OAKVILLE-BH-SUN-01",
                             "class_name": "Bhangra Classes",
-                            "class_time": "Every Sunday | 6:00 to 7:00 pm",
+                            "class_time": "Every Sunday | 5:00 to 6:00 pm",
                             "class_day": 0,
                             "class_level": ["Beginner", "Intermediate", "Advance"],
                             "age_group": ["4-7", "8-14", "15+"],
