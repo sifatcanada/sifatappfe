@@ -33,7 +33,7 @@
             "type": "semester",
             "start_date": "2025-05-01T00:00:00-05:00",
             "end_date": "2025-08-31T00:00:00-05:00",
-            "qty": 15,
+            "qty": 14,
             "unit": 16.67,
             "currency": "CAD",
             "excluded_dates": [
