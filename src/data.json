@@ -31,7 +31,7 @@
             "name": "SUMMER 2025 SESSION",
             "description": "SIFAT Summer 2025 package is for May - Aug 2025.",
             "type": "semester",
-            "start_date": "2025-05-01T00:00:00-05:00",
+            "start_date": "2025-05-04T00:00:00-05:00",
             "end_date": "2025-08-31T00:00:00-05:00",
             "qty": 14,
             "unit": 17.86,
