@@ -335,17 +335,7 @@
                             "class_name": "Bhangra Classes",
                             "class_time": "Every Sunday | 10:00 to 11:00 am",
                             "class_day": 0,
-                            "class_level": ["Intermediate", "Advance"],
-                            "age_group": ["8-14", "15+"],
-                            "class_type": "Bhangra",
-                            "class_link": "NA"
-                        },
-                        {
-                            "class_id": "ORANGEVILLE-BH-SUN-02",
-                            "class_name": "Bhangra Classes",
-                            "class_time": "Every Sunday | 11:00 to 12:00 pm",
-                            "class_day": 0,
-                            "class_level": ["Beginner"],
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
                             "age_group": ["4-7", "8-14", "15+"],
                             "class_type": "Bhangra",
                             "class_link": "NA"
