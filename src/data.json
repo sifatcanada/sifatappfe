@@ -151,7 +151,7 @@
                             "class_time": "Every Wednesday | 6:30 to 7:30 pm",
                             "class_day": 3,
                             "class_level": ["Beginner", "Intermediate"],
-                            "age_group": ["8-14"],
+                            "age_group": ["8-14", "15+"],
                             "class_type": "Bhangra",
                             "class_link": "NA"
                         },
@@ -161,7 +161,7 @@
                             "class_time": "Every Wednesday | 7:30 to 8:30 pm",
                             "class_day": 3,
                             "class_level": ["Beginner", "Intermediate"],
-                            "age_group": ["8-14"],
+                            "age_group": ["8-14", "15+"],
                             "class_type": "Giddha",
                             "class_link": "NA"
                         },
