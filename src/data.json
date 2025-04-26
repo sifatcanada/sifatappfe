@@ -27,6 +27,21 @@
             "package_type_id": "PT-01"
         },
         {
+            "package_id": "PASS-02",
+            "name": "TRAIL CLASS",
+            "description": "SIFAT Trail Class consists of 1 classes and can be used in the specific registered class",
+            "type": "pass",
+            "start_date": "NA",
+            "end_date": "NA",
+            "qty": 1,
+            "unit": 10,
+            "currency": "CAD",
+            "excluded_dates": [
+                "NA"
+            ],
+            "package_type_id": "PT-02"
+        },
+        {
             "package_id": "SESSION-06",
             "name": "SUMMER 2025 SESSION",
             "description": "SIFAT Summer 2025 package is for May - Aug 2025.",
@@ -182,6 +197,22 @@
                             "class_day": 0,
                             "class_level": ["Beginner", "Intermediate"],
                             "age_group": ["8-14"],
+                            "class_type": "Bhangra",
+                            "class_link": "NA"
+                        }
+                    ]
+                },
+                {
+                    "name": "BRAMPTON WEST",
+                    "address" : "Unit F, 315 Royal West Dr, Brampton, ON, L6X 0B3",
+                    "classes" : [
+                        {
+                            "class_id": "BRAMPTON-BH-SUN-02",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Sunday | 2:00 to 3:00 pm",
+                            "class_day": 0,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["4-7", "8-14", "15+"],
                             "class_type": "Bhangra",
                             "class_link": "NA"
                         }
