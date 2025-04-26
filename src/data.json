@@ -28,8 +28,8 @@
         },
         {
             "package_id": "PASS-02",
-            "name": "TRAIL CLASS",
-            "description": "SIFAT Trail Class consists of 1 classes and can be used in the specific registered class",
+            "name": "TRIAL CLASS",
+            "description": "SIFAT Trial Class consists of 1 classes and can be used in the specific registered class",
             "type": "pass",
             "start_date": "NA",
             "end_date": "NA",
