@@ -143,7 +143,7 @@
                         {
                             "class_id": "BRAMPTON-BL-TUE-01",
                             "class_name": "Bollywood Classes",
-                            "class_time": "Every Tuesday | 6:30 to 7:30 pm",
+                            "class_time": "Every Tuesday | 6:00 to 7:00 pm",
                             "class_day": 2,
                             "class_level": ["Beginner", "Intermediate", "Advance"],
                             "age_group": ["8-14", "15+"],
@@ -196,8 +196,18 @@
                             "class_time": "Every Sunday | 12:00 to 1:00 pm",
                             "class_day": 0,
                             "class_level": ["Beginner", "Intermediate"],
-                            "age_group": ["8-14"],
+                            "age_group": ["8-14", "15+"],
                             "class_type": "Bhangra",
+                            "class_link": "NA"
+                        },
+                        {
+                            "class_id": "BRAMPTON-BL-SUN-01",
+                            "class_name": "Bollywood Classes",
+                            "class_time": "Every Sunday | 3:00 to 4:00 pm",
+                            "class_day": 0,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["4-7", "8-14"],
+                            "class_type": "Bollywood",
                             "class_link": "NA"
                         }
                     ]
