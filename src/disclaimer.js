@@ -1,41 +1,53 @@
-export const disclaimerTerms = `DISCLAIMER
+export const disclaimerTerms = `SIFAT - School of Indian Folk Arts & Tradition Inc.
 
-1. School of Indian Folk Arts and Tradition - SIFAT offers many programs to teach and bring awareness about folk arts and tradition to our students which may include, but are not limited to, private or group classes, workshops, social functions, fundraisers, showcases, competitions. Further, such programs may be offered directly through SIFAT or through a third-party individual or group using the SIFAT academy location.
+Consent, Waiver & Acknowledgment Form
+This Consent Form must be signed by all participants or by a parent/legal guardian if the participant is under the age of 18. Your signature confirms that you understand and accept the terms outlined below.
 
-2. Costumes & Props are NOT included in the fees for the dance classes. Students are requested to pay for their own costumes/props arranged as needed for classes or any performance organized by the school.
 
-3. Students will not reproduce, use or transit in any form, any of the Exercise and Dance routines taught to them in class, in part or whole for any commercial purposes, unless allowed by SIFAT in writing.
+1. General Program Participation
+I understand that the School of Indian Folk Arts and Tradition Inc. (SIFAT) offers a variety of programs to teach and promote folk arts and traditions, which may include—but are not limited to—group or private classes, workshops, performances, competitions, social functions, and fundraisers. These programs may be conducted either directly by SIFAT or by affiliated third-party instructors or organizations using SIFAT's venues.
 
-4. SIFAT will not be responsible for any loss or theft of any valuables like mobile phones, jewelry, etc. in class or at any performance event conducted by the school.
 
-5. Parents are requested to drop their children and leave the premises and come back to collect the child once the class is over. Parents are requested not to wait and sit in the corridors at the Class location unless there is a specific waiting area assigned.
+2. Fees, Subscriptions & Cancellations
+I acknowledge that all class fees must be paid in full before attending any class.
+All subscription fees are non-refundable and non-transferable. All sales are final.
+SIFAT requires a minimum of five participants to run a class. Classes may be canceled if this requirement is not met.
+Subscription cancellation requests must be made at least two weeks prior to the next due date, otherwise payment will be processed automatically.
+Subscription change requests must also be submitted two weeks in advance of the next billing cycle.
 
-6. Classes missed will not be made up, except those canceled by SIFAT. Students will be informed regarding the rescheduling of the classes. Students/Parents are requested to adjust to last-minute changes (if any) in days and/or timings of classes, especially due to unforeseen circumstances in case of any natural calamity or other unforeseen events.
 
-7. If any student has a medical condition and is required to take prescribed medication in the event of a medical condition occurrence, the student must keep the prescribed medicines with them during the class course. SIFAT will NOT administer any medication in these circumstances. Also, in case of any medical condition, the student must submit a NO OBJECTION CERTIFICATE to the Instructor from a medical practitioner stating that he/she is fit to attend the dance classes and/or perform at the show/s.
+3. Costumes, Props & Intellectual Property
+Costumes and props are not included in class fees. Students must purchase these separately when required.
+Students may not reproduce, share, or commercially use any routines, choreography, or exercises taught in class without written permission from SIFAT.
 
-8. SIFAT is entitled to take photographs, record dance videos of students in classes during practice or during performances arranged by the school in various competitions or any social events. Your enrollment in our classes confirms that you have no objection to the same and will co-operate with SIFAT for all such publicity, television, and media coverage and you authorize SIFAT to use this content for any kind of advertisement/promotional purposes.
 
-9. Students are required to pay for the classes before they start their first class.
+4. Attendance & Class Adjustments
+Classes missed by students will not be made up, except when canceled by SIFAT.
+SIFAT may adjust class times or reschedule due to emergencies, natural events, or other unforeseen circumstances.
 
-10. Minimum number of people required to run any class is five. SIFAT holds the right to cancel the class if this minimum requirement for participation is not reached.
 
-11. Student and Parent/Guardian realize that participation in dance classes and activities could involve some possible personal injury. Despite precautions, accidents and injuries may occur. By signing this form, Student and Parent/Guardian assume all risks related to the use of any and all spaces used by SIFAT.
+5. Parental Responsibilities (for Minor Participants)
+Parents/guardians are requested to drop off and pick up their children on time and not wait in hallways unless an assigned waiting area is provided.
 
-12. Student and Parent/Guardian agree to release and hold harmless SIFAT including its teachers, dancers, staff members, and facilities used by SIFAT from any cause of action, claims, or demands now and in the future.
 
-13. Student and Parent/Guardian will not hold SIFAT liable for any personal injury or any personal property damage, which may occur on the premises before, during, or after classes.
+6. Liability Waiver
+I understand and acknowledge the inherent risk of personal injury involved in dance and physical activity.
+I agree to release, indemnify, and hold harmless SIFAT, its staff, instructors, volunteers, and venue providers from any claims related to personal injury, medical conditions, property damage, theft, or loss, before, during, or after class participation.
 
-14. Furthermore, Student and Parent/Guardian agree to obey the class and facility rules and take full responsibility for their behavior in addition to any damage they may cause to the facilities utilized by SIFAT.
 
-15. In the event, that, SIFAT Student and any Parent/Guardian should observe any unsafe conduct or conditions before, during, or after classes, Student and any Parent/Guardian to report the unsafe conduct or conditions to the Executive Director, Individual Instructor, or staff member as soon as possible.
+7. Medical Emergencies
+I agree that in case of an emergency, SIFAT may seek appropriate medical assistance.
+If I or my child has a medical condition, I will submit a No Objection Certificate from a physician stating fitness to participate and will ensure all necessary medication is brought to class. SIFAT staff will not administer medication.
 
-16. Students and Parent/Guardian agrees that the Paid subscription fee is NON-REFUNDABLE and NON-TRANSFERRABLE.
 
-17. All sales are final.
+8. Media & Publicity Consent
+I give permission to SIFAT to photograph, video record, and publish images or recordings of me or my child taken during classes, performances, or events for promotional and publicity purposes without compensation or restriction.
 
-18. CANCELLATION OF SUBSCRIPTION - In case you need to cancel your subscription, you will need to give us at least two weeks' notice prior to your due date, otherwise, your payment will be deducted automatically, and you can make up for your classes for paid money.
 
-19. CHANGE OF SUBSCRIPTION - In case you need to change your subscription from option one to another, you will need to notify us at least 2 weeks prior to your due date to update your records and make that change.
+9. WhatsApp Group & Contact Sharing
+I consent to be added to a WhatsApp group for class-related communications. I understand that my phone number will be visible to other students or parents in the group and agree to share my contact details for this purpose.
+I agree that this platform will be used only for communication related to the class, scheduling, and event coordination, and I will not misuse it in any form.
 
-20. School of Indian Folk Arts and Tradition (SIFAT) Canada is administered by Nawabz Experience Inc. All above-mentioned policies apply to both SIFAT Canada and Nawab Experience Inc.`;
+
+10. Safety, Behavior & Responsibility
+I agree to comply with all SIFAT rules, show respect to instructors and fellow students, and take responsibility for my own behavior and any damage I may cause. I will report any unsafe conduct or conditions immediately to the instructor or director.`;
