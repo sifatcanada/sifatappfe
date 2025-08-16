@@ -573,7 +573,35 @@ function App() {
           </div>
         )}
 
-        {!(selectedCity[0].name === 'CAMBRIDGE' || selectedCity[0].name === 'CALEDON') && (
+        {selectedCity[0].name === 'NEW TECUMSETH' && (
+            <div>
+            <Button
+              component="a"
+              href={selectedClassesByAgeLevelTiming[0].class_link}
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="contained"
+              sx={{ mt: 3, mb: 2 }}
+            >Proceed to Registration
+            </Button>
+          </div>
+        )}
+
+        {(selectedCity[0].name === 'OAKVILLE' && selectedClassesByAgeLevelTiming[0].class_link !== 'NA') && (
+            <div>
+            <Button
+              component="a"
+              href={selectedClassesByAgeLevelTiming[0].class_link}
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="contained"
+              sx={{ mt: 3, mb: 2 }}
+            >Proceed to Registration
+            </Button>
+          </div>
+        )}
+
+        {!(selectedCity[0].name === 'CAMBRIDGE' || selectedCity[0].name === 'CALEDON' || selectedCity[0].name === 'NEW TECUMSETH' || (selectedCity[0].name === 'OAKVILLE' && selectedClassesByAgeLevelTiming[0].class_link !== 'NA')) && (
             <>
               <p className='selection-heading'>Available Packages</p>
               <Grid container spacing={2} justifyContent="center">
