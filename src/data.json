@@ -28,7 +28,7 @@
         },
         {
             "package_id": "PASS-02",
-            "name": "DROP IN",
+            "name": "DROP-IN CLASS",
             "description": "SIFAT Drop-In Class consists of 1 class and can be used in the specific registered class",
             "type": "pass",
             "start_date": "NA",
