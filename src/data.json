@@ -13,9 +13,9 @@
     "packages": [
         {
             "package_id": "PASS-01",
-            "name": "MONTHLY SUBSCRIPTION",
-            "description": "SIFAT Monthly Subscription consists of 4 classes",
-            "type": "subscription",
+            "name": "MONTHLY (4-Classes)",
+            "description": "SIFAT Monthly Subscription consists of 4 classes (Recurring)",
+            "type": "subscription-1",
             "start_date": "NA",
             "end_date": "NA",
             "qty": 1,
@@ -27,19 +27,19 @@
             "package_type_id": "PT-01"
         },
         {
-            "package_id": "PASS-02",
-            "name": "MONTHLY PASS",
-            "description": "SIFAT Monthly Pass consists of 4 classes",
-            "type": "pass",
+            "package_id": "PASS-03",
+            "name": "MONTHLY (8-Classes)",
+            "description": "SIFAT Monthly Subscription consists of 8 classes (Recurring)",
+            "type": "subscription-2",
             "start_date": "NA",
             "end_date": "NA",
             "qty": 1,
-            "unit": 80,
+            "unit": 100,
             "currency": "CAD",
             "excluded_dates": [
                 "NA"
             ],
-            "package_type_id": "PT-02"
+            "package_type_id": "PT-03"
         }
     ],
     "age_group": [
