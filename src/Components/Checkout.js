@@ -20,7 +20,7 @@ const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, 
     const createOrder = async (data, actions) => {
         const response = await axios.post(server_url+'/api/create-payment',
         {
-            "amount": ((package_type === 'semester' ? semClassQty : package_qty) * class_package.unit * 1.13).toFixed(2),
+            "amount": ((package_type === 'semester' ? semClassQty : package_qty) * class_package.unit).toFixed(2),
             "currency_code": "CAD",
             "return_url": "https://sifatcanada.com/success",
             "cancel_url": "https://sifatcanada.com/cancel"
@@ -34,7 +34,7 @@ const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, 
                 description: class_package.name,
                 amount: {
                     currency_code: "CAD",
-                    value: ((package_type === 'semester' ? semClassQty : package_qty) * class_package.unit * 1.13).toFixed(2),
+                    value: ((package_type === 'semester' ? semClassQty : package_qty) * class_package.unit).toFixed(2),
                     quantity: (package_type === 'semester' ? semClassQty : package_qty)
                 },
             },
@@ -50,6 +50,13 @@ const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, 
             setSuccess(true);
           // Handle the successful transaction
         });
+    };
+
+    const onApproveSubscription = async (data, actions) => {
+        const subscriptionId = data.subscriptionID;  
+        console.log("Subscription approved. ID:", subscriptionId);
+        setTransactionId(subscriptionId);
+        setSuccess(true);
     };
 
     const onError = (err) => {
@@ -74,7 +81,7 @@ const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, 
                 class_timing,
                 class_package.name,
                 student_age,
-                ((package_type === 'semester' ? semClassQty : package_qty) * class_package.unit * 1.13).toFixed(2),
+                ((package_type === 'semester' ? semClassQty : package_qty) * class_package.unit).toFixed(2),
                 transactionId,
                 (package_type === 'semester' ? semAvailableDates : "NA"),
                 (package_type === 'semester' ? true : false)
@@ -92,7 +99,7 @@ const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, 
                 class_timing,
                 class_package.name,
                 student_age,
-                ((package_type === 'semester' ? semClassQty : package_qty) * class_package.unit * 1.13).toFixed(2),
+                ((package_type === 'semester' ? semClassQty : package_qty) * class_package.unit).toFixed(2),
                 transactionId,
                 "Payment"
               );
@@ -105,7 +112,7 @@ const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, 
 
     return (
         <>
-        {step === 'checkout-payment' && (
+        {step === 'checkout-payment' && package_type === 'pass' && (
 
             <>
             <Typography gutterBottom variant="h6" component="div" fontWeight="bold">
@@ -125,6 +132,30 @@ const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, 
             </PayPalScriptProvider>
         </>
         )}
+
+        {step === 'checkout-payment' && package_type === 'subscription' && (
+
+        <>
+        <Typography gutterBottom variant="h6" component="div" fontWeight="bold">
+            SELECT A PAYMENT METHOD
+        </Typography>
+        <PayPalScriptProvider options={{ "client-id": CLIENT_ID, vault: true, currency: "CAD", locale: "en_CA", intent: "subscription"}}>
+            <Grid container spacing={0.5} justifyContent="center">
+                <Grid item xs={12} sm={6}>
+                    <PayPalButtons
+                        style={{ layout: "vertical" }}
+                        fundingSource="paypal"
+                        createSubscription={(data, actions) => { return actions.subscription.create({ plan_id: "P-3VX06565WU951273LNESTL7A" }); }}
+                        onApprove={(data, actions) => onApproveSubscription(data, actions)}
+                        onError={(err) => onError(err)}
+                    />
+                </Grid>
+            </Grid>
+        </PayPalScriptProvider>
+        </>
+        )}
+
+        
 
         {step === 'payment-complete' && (
 
