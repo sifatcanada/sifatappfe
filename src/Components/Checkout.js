@@ -145,7 +145,7 @@ const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, 
                     <PayPalButtons
                         style={{ layout: "vertical" }}
                         fundingSource="paypal"
-                        createSubscription={(data, actions) => { return actions.subscription.create({ plan_id: "P-15F63197084718828NESS7BY" }); }}
+                        createSubscription={(data, actions) => { return actions.subscription.create({ plan_id: "XXXXXXXXXXXX" }); }}
                         onApprove={(data, actions) => onApproveSubscription(data, actions)}
                         onError={(err) => onError(err)}
                     />
