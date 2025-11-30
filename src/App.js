@@ -385,7 +385,7 @@ function App() {
         classTiming,
         selectedClassPackage.name,
         selectedAgeGroup,
-        ((selectedClassPackage.type === 'semester' ? semClassQty : selectedClassPackage.qty) * selectedClassPackage.unit * 1.13).toFixed(2),
+        ((selectedClassPackage.type === 'semester' ? semClassQty : selectedClassPackage.qty) * selectedClassPackage.unit).toFixed(2),
         "Not Paid",
         (selectedClassPackage.type === 'semester' ? semAvailableDates : "NA"),
         (selectedClassPackage.type === 'semester' ? true : false)
@@ -403,7 +403,7 @@ function App() {
         classTiming,
         selectedClassPackage.name,
         selectedAgeGroup,
-        ((selectedClassPackage.type === 'semester' ? semClassQty : selectedClassPackage.qty) * selectedClassPackage.unit * 1.13).toFixed(2),
+        ((selectedClassPackage.type === 'semester' ? semClassQty : selectedClassPackage.qty) * selectedClassPackage.unit).toFixed(2),
         "Not Paid",
         "Pre-Payment"
       );

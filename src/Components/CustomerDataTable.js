@@ -63,10 +63,10 @@ export default function CustomerDataTable({ first_name, last_name, phone, email,
             <b>Cost: </b>${(package_type === 'semester' ? semClassQty : package_qty) * package_unit}
             </Typography>
             <Typography variant="body2" color="text.primary" sx={{ padding: '5px' }}>
-            <b>HST: </b>13%
+            <b>HST: </b>Incl.
             </Typography>
             <Typography variant="body1" color="text.primary" sx={{ padding: '5px' }}>
-            <b>Total: </b>${((package_type === 'semester' ? semClassQty : package_qty) * package_unit * 1.13).toFixed(2)} CAD
+            <b>Total: </b>${((package_type === 'semester' ? semClassQty : package_qty) * package_unit).toFixed(2)} CAD ({(package_type === 'subscription' ? 'Monthly' : 'One-Time')})
             </Typography>
           </CardContent>
       </Card>

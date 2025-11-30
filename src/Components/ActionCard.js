@@ -19,7 +19,7 @@ export default function ActionCard({ item, semClassQty, onClick, selected }) {
             {item.description} {description_postfix}
           </Typography>
           <br></br>
-          ${amount.toFixed(2)} CAD + HST
+          ${amount.toFixed(2)} CAD (HST Incl.)
         </CardContent>
       </CardActionArea>
     </Card>

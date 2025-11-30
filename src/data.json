@@ -14,12 +14,12 @@
         {
             "package_id": "PASS-01",
             "name": "MONTHLY SUBSCRIPTION",
-            "description": "SIFAT Monthly Pass consists of 4 classes",
+            "description": "SIFAT Monthly Subscription consists of 4 classes",
             "type": "subscription",
             "start_date": "NA",
             "end_date": "NA",
-            "qty": 4,
-            "unit": 14.50,
+            "qty": 1,
+            "unit": 65,
             "currency": "CAD",
             "excluded_dates": [
                 "NA"
@@ -28,13 +28,13 @@
         },
         {
             "package_id": "PASS-02",
-            "name": "DROP-IN CLASS",
-            "description": "SIFAT Drop-In Class consists of 1 class and can be used in the specific registered class",
+            "name": "MONTHLY PASS",
+            "description": "SIFAT Monthly Pass consists of 4 classes",
             "type": "pass",
             "start_date": "NA",
             "end_date": "NA",
             "qty": 1,
-            "unit": 20,
+            "unit": 80,
             "currency": "CAD",
             "excluded_dates": [
                 "NA"
