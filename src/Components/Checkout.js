@@ -133,7 +133,7 @@ const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, 
         </>
         )}
 
-        {step === 'checkout-payment' && package_type === 'subscription' && (
+        {step === 'checkout-payment' && package_type === 'subscription-1' && (
 
         <>
         <Typography gutterBottom variant="h6" component="div" fontWeight="bold">
@@ -155,7 +155,27 @@ const Checkout = ({ first_name, last_name, phone, email, sender_email, subject, 
         </>
         )}
 
-        
+        {step === 'checkout-payment' && package_type === 'subscription-2' && (
+
+        <>
+        <Typography gutterBottom variant="h6" component="div" fontWeight="bold">
+            SELECT A PAYMENT METHOD
+        </Typography>
+        <PayPalScriptProvider options={{ "client-id": CLIENT_ID, vault: true, currency: "CAD", locale: "en_CA", intent: "subscription"}}>
+            <Grid container spacing={0.5} justifyContent="center">
+                <Grid item xs={12} sm={6}>
+                    <PayPalButtons
+                        style={{ layout: "vertical" }}
+                        fundingSource="paypal"
+                        createSubscription={(data, actions) => { return actions.subscription.create({ plan_id: "P-2B389525YN743424HNEWMJAY" }); }}
+                        onApprove={(data, actions) => onApproveSubscription(data, actions)}
+                        onError={(err) => onError(err)}
+                    />
+                </Grid>
+            </Grid>
+        </PayPalScriptProvider>
+        </>
+        )}
 
         {step === 'payment-complete' && (
 

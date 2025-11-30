@@ -50,4 +50,8 @@ I agree that this platform will be used only for communication related to the cl
 
 
 10. Safety, Behavior & Responsibility
-I agree to comply with all SIFAT rules, show respect to instructors and fellow students, and take responsibility for my own behavior and any damage I may cause. I will report any unsafe conduct or conditions immediately to the instructor or director.`;
+I agree to comply with all SIFAT rules, show respect to instructors and fellow students, and take responsibility for my own behavior and any damage I may cause. I will report any unsafe conduct or conditions immediately to the instructor or director.
+
+
+11. Monthly Subscription Terms & Cancellation Policy
+By enrolling, you agree to recurring monthly payments. The payment amount will be automatically deducted each month on the date you signed up. To cancel your subscription, you must contact us and provide a minimum of four (4) weeks notice prior to your next billing date.`;
