@@ -12,7 +12,7 @@ I understand that the School of Indian Folk Arts and Tradition Inc. (SIFAT) offe
 I acknowledge that all class fees must be paid in full before attending any class.
 All subscription fees are non-refundable and non-transferable. All sales are final.
 SIFAT requires a minimum of five participants to run a class. Classes may be canceled if this requirement is not met.
-Subscription cancellation requests must be made at least two weeks prior to the next due date, otherwise payment will be processed automatically.
+Subscription cancellation requests must be made at least four (4) weeks prior to the next due date, otherwise payment will be processed automatically.
 Subscription change requests must also be submitted two weeks in advance of the next billing cycle.
 
 
