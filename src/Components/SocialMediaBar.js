@@ -4,7 +4,6 @@ import { Container } from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import TikTokIcon from './TikTokIcon';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
@@ -15,7 +14,6 @@ export default function SocialMediaBar() {
   const youtube_link = jsonData.youtube_link;
   const insta_link = jsonData.insta_link;
   const facebook_link = jsonData.facebook_link;
-  const twitter_link = jsonData.twitter_link;
   const phone_number = jsonData.phone_number;
   const email_address = jsonData.email_address;
   return (
@@ -38,10 +36,6 @@ export default function SocialMediaBar() {
 
         <a href={facebook_link} target="_blank" rel="noopener noreferrer">
         <FacebookIcon color="primary" fontSize="large" />
-        </a>
-
-        <a href={twitter_link} target="_blank" rel="noopener noreferrer">
-        <TwitterIcon fontSize="large" sx={{ color: "#1DA1F2" }} />
         </a>
 
         <a href={`tel:${phone_number}`} rel="noopener noreferrer">
