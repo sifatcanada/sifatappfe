@@ -601,11 +601,11 @@ function App() {
           </div>
         )}
 
-        {!(selectedCity[0].name === 'CAMBRIDGE' || selectedCity[0].name === 'CALEDON' || selectedCity[0].name === 'NEW TECUMSETH' || (selectedCity[0].name === 'OAKVILLE' && selectedClassesByAgeLevelTiming[0].class_link !== 'NA')) && (
+        {selectedCity[0].name === 'BRAMPTON' && (
             <>
               <p className='selection-heading'>Available Packages</p>
               <Grid container spacing={2} justifyContent="center">
-                {jsonData.packages.map((item) => (
+                {jsonData.packages.filter(item => item.type?.toLowerCase().includes('subscription')).map((item) => (
                   <Grid item>
                     <ActionCard
                       item={item}
@@ -618,6 +618,25 @@ function App() {
               </Grid>
             </>
         )}
+
+        {selectedCity[0].name === 'LONDON' && (
+            <>
+              <p className='selection-heading'>Available Packages</p>
+              <Grid container spacing={2} justifyContent="center">
+                {jsonData.packages.filter(item => item.type?.toLowerCase() === 'semester').map((item) => (
+                  <Grid item>
+                    <ActionCard
+                      item={item}
+                      semClassQty={(allAvailDates['avdts'].find(avdtsitem => avdtsitem.package_id === item.package_id)).class_count}
+                      onClick={handlePackageType}
+                      selected={selectedCard === item}
+                    />
+                  </Grid>
+                ))}
+              </Grid>
+            </>
+        )}
+
         </>
       )}
 

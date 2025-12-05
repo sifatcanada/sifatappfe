@@ -9,7 +9,6 @@
     "youtube_link": "https://www.youtube.com/@SIFATCANADA",
     "insta_link": "https://www.instagram.com/sifatcanada",
     "facebook_link": "https://www.facebook.com/sifatcanada",
-    "twitter_link": "https://twitter.com/sifatcanada?lang=en",
     "packages": [
         {
             "package_id": "PASS-01",
@@ -40,6 +39,41 @@
                 "NA"
             ],
             "package_type_id": "PT-03"
+        },
+        {
+            "package_id": "SESSION-07",
+            "name": "FALL 2025 SESSION",
+            "description": "SIFAT Fall 2025 package is for Sep - Dec 2025.",
+            "type": "semester",
+            "start_date": "2025-09-02T00:00:00-04:00",
+            "end_date": "2025-12-31T00:00:00-04:00",
+            "qty": 0,
+            "unit": 16.60,
+            "currency": "CAD",
+            "excluded_dates": [
+                "2025-10-13T00:00:00-04:00",
+                "2025-12-15T00:00:00-04:00",
+                "2025-12-22T00:00:00-04:00",
+                "2025-12-29T00:00:00-04:00",
+                "2025-12-16T00:00:00-04:00",
+                "2025-12-23T00:00:00-04:00",
+                "2025-12-30T00:00:00-04:00",
+                "2025-12-17T00:00:00-04:00",
+                "2025-12-24T00:00:00-04:00",
+                "2025-12-31T00:00:00-04:00",
+                "2025-12-18T00:00:00-04:00",
+                "2025-12-25T00:00:00-04:00",
+                "2025-12-12T00:00:00-04:00",
+                "2025-12-19T00:00:00-04:00",
+                "2025-12-26T00:00:00-04:00",
+                "2025-12-13T00:00:00-04:00",
+                "2025-12-20T00:00:00-04:00",
+                "2025-12-27T00:00:00-04:00",
+                "2025-12-14T00:00:00-04:00",
+                "2025-12-21T00:00:00-04:00",
+                "2025-12-28T00:00:00-04:00"
+            ],
+            "package_type_id": "PT-07"
         }
     ],
     "age_group": [
@@ -87,19 +121,9 @@
                     "address" : "Unit 9B, 8 Automatic Rd, Brampton, ON, L6S 5N4",
                     "classes" : [
                         {
-                            "class_id": "BRAMPTON-BH-MON-04",
-                            "class_name": "Bhangra Classes",
-                            "class_time": "Every Monday | 6:00 to 7:00 pm",
-                            "class_day": 1,
-                            "class_level": ["Beginner", "Intermediate", "Advance"],
-                            "age_group": ["8-14", "15+"],
-                            "class_type": "Bhangra",
-                            "class_link": "NA"
-                        },
-                        {
                             "class_id": "BRAMPTON-BH-MON-08",
                             "class_name": "Giddha Classes",
-                            "class_time": "Every Monday | 7:00 to 8:00 pm",
+                            "class_time": "Every Monday | 7:30 to 8:15 pm",
                             "class_day": 1,
                             "class_level": ["Beginner", "Intermediate", "Advance"],
                             "age_group": ["8-14", "15+"],
@@ -109,49 +133,29 @@
                         {
                             "class_id": "BRAMPTON-BH-MON-07",
                             "class_name": "Bhangra Classes",
-                            "class_time": "Every Monday | 8:00 to 9:00 pm",
+                            "class_time": "Every Monday | 8:15 to 9:00 pm",
                             "class_day": 1,
-                            "class_level": ["Intermediate", "Advance"],
-                            "age_group": ["8-14", "15+"],
+                            "class_level": ["Advance"],
+                            "age_group": ["15+"],
                             "class_type": "Bhangra",
-                            "class_link": "NA"
-                        },
-                        {
-                            "class_id": "BRAMPTON-BL-TUE-01",
-                            "class_name": "Bollywood Classes",
-                            "class_time": "Every Tuesday | 5:30 to 6:30 pm",
-                            "class_day": 2,
-                            "class_level": ["Beginner", "Intermediate", "Advance"],
-                            "age_group": ["4-7"],
-                            "class_type": "Bollywood",
                             "class_link": "NA"
                         },
                         {
                             "class_id": "BRAMPTON-BH-TUE-01",
                             "class_name": "Bhangra Classes",
-                            "class_time": "Every Tuesday | 6:30 to 7:30 pm",
+                            "class_time": "Every Tuesday | 5:30 to 6:15 pm",
                             "class_day": 2,
-                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "class_level": ["Beginner", "Intermediate"],
                             "age_group": ["8-14"],
                             "class_type": "Bhangra",
                             "class_link": "NA"
                         },
                         {
-                            "class_id": "BRAMPTON-BL-TUE-02",
-                            "class_name": "Bollywood Classes",
-                            "class_time": "Every Tuesday | 7:30 to 8:30 pm",
-                            "class_day": 2,
-                            "class_level": ["Beginner", "Intermediate", "Advance"],
-                            "age_group": ["8-14", "15+"],
-                            "class_type": "Bollywood",
-                            "class_link": "NA"
-                        },
-                        {
                             "class_id": "BRAMPTON-BH-WED-03",
                             "class_name": "Bhangra Classes",
-                            "class_time": "Every Wednesday | 5:30 to 6:30 pm",
+                            "class_time": "Every Wednesday | 5:30 to 6:15 pm",
                             "class_day": 3,
-                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "class_level": ["Intermediate", "Advance"],
                             "age_group": ["4-7"],
                             "class_type": "Bhangra",
                             "class_link": "NA"
@@ -159,31 +163,21 @@
                         {
                             "class_id": "BRAMPTON-BH-WED-01",
                             "class_name": "Bhangra Classes",
-                            "class_time": "Every Wednesday | 6:30 to 7:30 pm",
+                            "class_time": "Every Wednesday | 6:15 to 7:00 pm",
                             "class_day": 3,
-                            "class_level": ["Intermediate", "Advance"],
-                            "age_group": ["15+"],
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["8-14", "15+"],
                             "class_type": "Bhangra",
                             "class_link": "NA"
                         },
                         {
                             "class_id": "BRAMPTON-GI-WED-01",
                             "class_name": "Giddha Classes",
-                            "class_time": "Every Wednesday | 7:30 to 8:30 pm",
+                            "class_time": "Every Wednesday | 7:00 to 7:45 pm",
                             "class_day": 3,
-                            "class_level": ["Beginner"],
-                            "age_group": ["8-14", "15+"],
-                            "class_type": "Giddha",
-                            "class_link": "NA"
-                        },
-                        {
-                            "class_id": "BRAMPTON-BH-THU-01",
-                            "class_name": "Bhangra Classes",
-                            "class_time": "Every Thursday | 8:00 to 9:00 pm",
-                            "class_day": 4,
                             "class_level": ["Beginner", "Intermediate", "Advance"],
                             "age_group": ["8-14", "15+"],
-                            "class_type": "Bhangra",
+                            "class_type": "Giddha",
                             "class_link": "NA"
                         }
                     ]
@@ -195,49 +189,36 @@
                         {
                             "class_id": "BRAMPTON-BH-SUN-02",
                             "class_name": "Bhangra Classes",
-                            "class_time": "Every Sunday | 2:00 to 3:00 pm",
+                            "class_time": "Every Sunday | 2:00 to 2:45 pm",
                             "class_day": 0,
-                            "class_level": ["Beginner", "Intermediate", "Advance"],
-                            "age_group": ["4-7", "8-14", "15+"],
+                            "class_level": ["Intermediate", "Advance"],
+                            "age_group": ["4-7", "8-14"],
                             "class_type": "Bhangra",
+                            "class_link": "NA"
+                        },
+                        {
+                            "class_id": "BRAMPTON-GI-THU-01",
+                            "class_name": "Giddha Classes",
+                            "class_time": "Every Thursday | 6:00 to 6:45 pm",
+                            "class_day": 4,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["8-14", "15+"],
+                            "class_type": "Giddha",
                             "class_link": "NA"
                         },
                         {
                             "class_id": "BRAMPTON-BH-THU-01",
                             "class_name": "Bhangra Classes",
-                            "class_time": "Every Thursday | 8:15 to 9:15 pm",
+                            "class_time": "Every Thursday | 6:45 to 7:30 pm",
                             "class_day": 4,
-                            "class_level": ["Beginner", "Intermediate", "Advance"],
-                            "age_group": ["15+"],
+                            "class_level": ["Intermediate", "Advance"],
+                            "age_group": ["8-14", "15+"],
                             "class_type": "Bhangra",
                             "class_link": "NA"
                         }
                     ]
                 }
             ]  
-        },
-        { 
-            "name": "MISSISSAUGA",
-            "city": "MISSISSAUGA",
-            "url" : "/sifat-site/static/images/image-button-background.jpg",
-            "locations": [
-                {
-                    "name": "MISSISSAUGA",
-                    "address" : "560 Courtneypark Dr West, Mississauga, L5W 1L9",
-                    "classes" : [
-                        {
-                            "class_id": "MISSISSAUGA-BH-SUN-01",
-                            "class_name": "Bhangra Classes",
-                            "class_time": "Every Sunday | 4:00 to 5:00 pm",
-                            "class_day": 0,
-                            "class_level": ["Beginner", "Intermediate", "Advance"],
-                            "age_group": ["4-7", "8-14", "15+"],
-                            "class_type": "Bhangra",
-                            "class_link": "NA"
-                        }
-                    ]
-                }
-            ]
         },
         { 
             "name": "CALEDON",
@@ -256,7 +237,7 @@
                             "class_level": ["Intermediate", "Advance"],
                             "age_group": ["8-14"],
                             "class_type": "Bhangra",
-                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=2eec81dc-9404-4568-9acd-0b371eef6faf&redirectedFromEmbededMode=True&courseId=504665a6-c86a-4b7d-89e4-5555a5bb9886"
+                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=2eec81dc-9404-4568-9acd-0b371eef6faf&redirectedFromEmbededMode=True&courseId=a8fe6872-be59-4789-a841-ad7d8ac89d8d"
                         },
                         {
                             "class_id": "CALEDON-BU-TUE-02",
@@ -266,7 +247,7 @@
                             "class_level": ["Beginner", "Intermediate", "Advance"],
                             "age_group": ["15+"],
                             "class_type": "Bhangra",
-                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=2eec81dc-9404-4568-9acd-0b371eef6faf&redirectedFromEmbededMode=True&courseId=dd252f24-5926-4596-90d1-bc12666eea78"
+                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=2eec81dc-9404-4568-9acd-0b371eef6faf&redirectedFromEmbededMode=True&courseId=cf69e748-2006-4aa4-9cbc-fe3342993e87"
                         },
                         {
                             "class_id": "CALEDON-BH-SUN-03",
@@ -276,17 +257,17 @@
                             "class_level": ["Beginner"],
                             "age_group": ["4-7"],
                             "class_type": "Bhangra",
-                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=2eec81dc-9404-4568-9acd-0b371eef6faf&redirectedFromEmbededMode=True&courseId=0c339905-e0c8-4024-ad4f-5dce38644aa3"
+                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=2eec81dc-9404-4568-9acd-0b371eef6faf&redirectedFromEmbededMode=True&courseId=ed678599-00ff-49c9-a6ea-a6df5327e1c2"
                         },
                         {
                             "class_id": "CALEDON-BH-SUN-04",
                             "class_name": "Bhangra Classes",
                             "class_time": "Every Sunday | 11:00 to 12:00 pm",
                             "class_day": 0,
-                            "class_level": ["Beginner", "Intermediate"],
+                            "class_level": ["Beginner"],
                             "age_group": ["8-14"],
                             "class_type": "Bhangra",
-                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=2eec81dc-9404-4568-9acd-0b371eef6faf&redirectedFromEmbededMode=True&courseId=ae1da046-fabd-4b91-84fc-79bc52e4a4af"
+                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=2eec81dc-9404-4568-9acd-0b371eef6faf&redirectedFromEmbededMode=True&courseId=92b7d9d4-58ac-4c9a-842c-bc082024374f"
                         },
                         {
                             "class_id": "CALEDON-BH-SUN-05",
@@ -296,7 +277,7 @@
                             "class_level": ["Intermediate", "Advance"],
                             "age_group": ["4-7"],
                             "class_type": "Bhangra",
-                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=2eec81dc-9404-4568-9acd-0b371eef6faf&redirectedFromEmbededMode=True&courseId=86039b17-c4e8-4a7d-bb67-1ae6d64a1428"
+                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=2eec81dc-9404-4568-9acd-0b371eef6faf&redirectedFromEmbededMode=True&courseId=583580a6-d0f4-4c0d-bc59-35b3d4fea0c5"
                         }
                     ]
                 },
@@ -312,7 +293,7 @@
                             "class_level": ["Beginner"],
                             "age_group": ["4-7"],
                             "class_type": "Bhangra",
-                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=2eec81dc-9404-4568-9acd-0b371eef6faf&redirectedFromEmbededMode=True&courseId=c793a4f1-7e34-4134-8e44-b4c2a1e8a414"
+                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=2eec81dc-9404-4568-9acd-0b371eef6faf&redirectedFromEmbededMode=True&courseId=c23ca98d-326d-452c-8560-d558d9f35266"
                         },
                         {
                             "class_id": "CALEDON-BH-SAT-06",
@@ -322,7 +303,7 @@
                             "class_level": ["Beginner"],
                             "age_group": ["8-14", "15+"],
                             "class_type": "Bhangra",
-                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=2eec81dc-9404-4568-9acd-0b371eef6faf&redirectedFromEmbededMode=True&courseId=fc76e3e5-6398-4583-a33a-176c83f08138"
+                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=2eec81dc-9404-4568-9acd-0b371eef6faf&redirectedFromEmbededMode=True&courseId=df5bff7e-593f-437a-b95b-4252e324783d"
                         },
                         {
                             "class_id": "CALEDON-BH-SAT-08",
@@ -332,7 +313,7 @@
                             "class_level": ["Intermediate", "Advance"],
                             "age_group": ["4-7"],
                             "class_type": "Bhangra",
-                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=2eec81dc-9404-4568-9acd-0b371eef6faf&redirectedFromEmbededMode=True&courseId=6435872b-58fa-4df0-960f-feb4f06c0cfe"
+                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=2eec81dc-9404-4568-9acd-0b371eef6faf&redirectedFromEmbededMode=True&courseId=f5732998-4093-4345-b259-d9884ea94480"
                         },
                         {
                             "class_id": "CALEDON-BH-SAT-09",
@@ -342,30 +323,7 @@
                             "class_level": ["Intermediate", "Advance"],
                             "age_group": ["8-14", "15+"],
                             "class_type": "Bhangra",
-                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=2eec81dc-9404-4568-9acd-0b371eef6faf&redirectedFromEmbededMode=True&courseId=ec7836e3-98af-44d0-9051-207ef6786b4c"
-                        }
-                    ]
-                }
-            ]
-        },
-        { 
-            "name": "ORANGEVILLE",
-            "city": "ORANGEVILLE",
-            "url" : "/sifat-site/static/images/image-button-background.jpg",
-            "locations": [
-                {
-                    "name": "ORANGEVILLE",
-                    "address" : "70 Centennial Rd #1B, Orangeville, ON, L9W 1P9",
-                    "classes" : [
-                        {
-                            "class_id": "ORANGEVILLE-BH-SUN-01",
-                            "class_name": "Bhangra Classes",
-                            "class_time": "Every Sunday | 10:00 to 11:00 am",
-                            "class_day": 0,
-                            "class_level": ["Beginner", "Intermediate", "Advance"],
-                            "age_group": ["4-7", "8-14", "15+"],
-                            "class_type": "Bhangra",
-                            "class_link": "NA"
+                            "class_link": "https://townofcaledon.perfectmind.com/24154/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=2eec81dc-9404-4568-9acd-0b371eef6faf&redirectedFromEmbededMode=True&courseId=3fe49091-35f0-4258-a2da-a4ba7ccb7132"
                         }
                     ]
                 }
@@ -383,42 +341,42 @@
                         {
                             "class_id": "OAKVILLE-BH-SUN-01",
                             "class_name": "Bhangra Classes",
-                            "class_time": "Every Sunday | 5:00 to 6:00 pm",
+                            "class_time": "Every Sunday | 5:00 to 5:45 pm",
                             "class_day": 0,
                             "class_level": ["Beginner", "Intermediate", "Advance"],
-                            "age_group": ["4-7", "8-14", "15+"],
+                            "age_group": ["8-14"],
                             "class_type": "Bhangra",
-                            "class_link": "NA"
+                            "class_link": "https://townofoakville.perfectmind.com/24974/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=ca87fc2f-7033-45e5-8c6a-7209bbec2567&redirectedFromEmbededMode=True&courseId=1b2a7b0b-888e-46ed-91cb-0c4380190c3c"
                         },
                         {
-                            "class_id": "OAKVILLE-GH-SUN-01",
-                            "class_name": "Giddha Classes",
-                            "class_time": "Every Sunday | 6:00 to 7:00 pm",
+                            "class_id": "OAKVILLE-BH-SUN-02",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Sunday | 5:45 to 6:30 pm",
                             "class_day": 0,
                             "class_level": ["Beginner", "Intermediate", "Advance"],
-                            "age_group": ["4-7", "8-14", "15+"],
-                            "class_type": "Giddha",
-                            "class_link": "NA"
+                            "age_group": ["15+"],
+                            "class_type": "Bhangra",
+                            "class_link": "https://townofoakville.perfectmind.com/24974/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=ca87fc2f-7033-45e5-8c6a-7209bbec2567&redirectedFromEmbededMode=True&courseId=bf74068b-cc97-4bd2-9443-6e45572fef05"
                         },
                         {
                             "class_id": "OAKVILLE-BH-TUE-01",
                             "class_name": "Bhangra Classes",
-                            "class_time": "Every Tuesday | 6:00 to 7:00 pm",
+                            "class_time": "Every Tuesday | 6:00 to 6:45 pm",
                             "class_day": 2,
                             "class_level": ["Beginner", "Intermediate", "Advance"],
-                            "age_group": ["4-7", "8-14"],
+                            "age_group": ["8-14"],
                             "class_type": "Bhangra",
-                            "class_link": "https://townofoakville.perfectmind.com/24974/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=ca87fc2f-7033-45e5-8c6a-7209bbec2567&redirectedFromEmbededMode=True&courseId=efc02c85-418c-4a28-98e4-0f63d5c456f9"
+                            "class_link": "https://townofoakville.perfectmind.com/24974/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=ca87fc2f-7033-45e5-8c6a-7209bbec2567&redirectedFromEmbededMode=True&courseId=5d857c56-4001-415f-9a3b-4471d525c180"
                         },
                         {
                             "class_id": "OAKVILLE-BH-TUE-02",
                             "class_name": "Bhangra Classes",
-                            "class_time": "Every Tuesday | 7:00 to 8:00 pm",
+                            "class_time": "Every Tuesday | 6:45 to 7:30 pm",
                             "class_day": 2,
                             "class_level": ["Beginner", "Intermediate", "Advance"],
-                            "age_group": ["8-14", "15+"],
+                            "age_group": ["15+"],
                             "class_type": "Bhangra",
-                            "class_link": "https://townofoakville.perfectmind.com/24974/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=ca87fc2f-7033-45e5-8c6a-7209bbec2567&redirectedFromEmbededMode=True&courseId=522b08ee-3d3b-4fbd-9e7e-ed6ceac33c29"
+                            "class_link": "https://townofoakville.perfectmind.com/24974/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=ca87fc2f-7033-45e5-8c6a-7209bbec2567&redirectedFromEmbededMode=True&courseId=71bd6c47-83d8-4e2d-8e75-2dce4fe1060f"
                         }
                     ]
                 }
@@ -441,7 +399,7 @@
                             "class_level": ["Beginner", "Intermediate", "Advance"],
                             "age_group": ["4-7"],
                             "class_type": "Bhangra",
-                            "class_link": "https://anc.ca.apm.activecommunities.com/cambridgeont/activity/search/detail/54540?onlineSiteId=0&from_original_cui=true"
+                            "class_link": "https://anc.ca.apm.activecommunities.com/cambridgeont/activity/search/detail/55340?onlineSiteId=0&from_original_cui=true"
                         },
                         {
                             "class_id": "CAMBRIDGE-BH-THU-02",
@@ -451,7 +409,7 @@
                             "class_level": ["Beginner", "Intermediate", "Advance"],
                             "age_group": ["8-14"],
                             "class_type": "Bhangra",
-                            "class_link": "https://anc.ca.apm.activecommunities.com/cambridgeont/activity/search/detail/54541?onlineSiteId=0&from_original_cui=true"
+                            "class_link": "https://anc.ca.apm.activecommunities.com/cambridgeont/activity/search/detail/55341?onlineSiteId=0&from_original_cui=true"
                         },
                         {
                             "class_id": "CAMBRIDGE-BH-THU-03",
@@ -461,40 +419,7 @@
                             "class_level": ["Beginner", "Intermediate", "Advance"],
                             "age_group": ["15+"],
                             "class_type": "Bhangra",
-                            "class_link": "https://anc.ca.apm.activecommunities.com/cambridgeont/activity/search/detail/54542?onlineSiteId=0&from_original_cui=true"
-                        }
-                    ]
-                }
-            ]
-        },
-        { 
-            "name": "MARKHAM/SCARBOROUGH",
-            "city": "MARKHAM/SCARBOROUGH",
-            "url" : "/sifat-site/static/images/image-button-background.jpg",
-            "locations": [
-                {
-                    "name": "MARKHAM/SCARBOROUGH",
-                    "address" : "850 Tapscott Rd, Scarborough, ON, M1X 1N4",
-                    "classes" : [
-                        {
-                            "class_id": "MARKHAM-BH-SUN-01",
-                            "class_name": "Bhangra Classes",
-                            "class_time": "Every Sunday | 9:30 to 10:30 am",
-                            "class_day": 0,
-                            "class_level": ["Beginner", "Intermediate", "Advance"],
-                            "age_group": ["15+"],
-                            "class_type": "Bhangra",
-                            "class_link": "NA"
-                        },
-                        {
-                            "class_id": "MARKHAM-BH-SUN-02",
-                            "class_name": "Bhangra Classes",
-                            "class_time": "Every Sunday | 3:30 to 4:30 pm",
-                            "class_day": 0,
-                            "class_level": ["Beginner", "Intermediate", "Advance"],
-                            "age_group": ["8-14", "15+"],
-                            "class_type": "Bhangra",
-                            "class_link": "NA"
+                            "class_link": "https://anc.ca.apm.activecommunities.com/cambridgeont/activity/search/detail/55342?onlineSiteId=0&from_original_cui=true"
                         }
                     ]
                 }
@@ -510,12 +435,22 @@
                     "address" : "1106 Dearness Drive, London, ON, N6E 1N9",
                     "classes" : [
                         {
-                            "class_id": "LONDON-BH-SUN-02",
+                            "class_id": "LONDON-BH-WED-01",
                             "class_name": "Bhangra Classes",
-                            "class_time": "Every Sunday | 10:00 to 11:00 pm",
-                            "class_day": 0,
+                            "class_time": "Every Wednesday | 4:00 to 5:00 pm",
+                            "class_day": 3,
                             "class_level": ["Beginner", "Intermediate", "Advance"],
-                            "age_group": ["4-7", "8-14", "15+"],
+                            "age_group": ["4-7", "8-14"],
+                            "class_type": "Bhangra",
+                            "class_link": "NA"
+                        },
+                        {
+                            "class_id": "LONDON-BH-WED-02",
+                            "class_name": "Bhangra Classes",
+                            "class_time": "Every Wednesday | 7:45 to 8:45 pm",
+                            "class_day": 3,
+                            "class_level": ["Beginner", "Intermediate", "Advance"],
+                            "age_group": ["4-7", "8-14"],
                             "class_type": "Bhangra",
                             "class_link": "NA"
                         }
@@ -540,7 +475,7 @@
                             "class_level": ["Beginner", "Intermediate", "Advance"],
                             "age_group": ["4-7"],
                             "class_type": "Bhangra",
-                            "class_link": "https://townofnewtecumseth.perfectmind.com/23798/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=fb9cd293-a7d0-48d9-a83a-9bea6a90c05f&redirectedFromEmbededMode=False&courseId=1b32a1df-925d-4944-aaf8-aa0dd0412d79"
+                            "class_link": "https://townofnewtecumseth.perfectmind.com/23798/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=fb9cd293-a7d0-48d9-a83a-9bea6a90c05f&redirectedFromEmbededMode=False&courseId=d013c321-ba93-4079-a55d-b8528e1b95e9"
                         },
                         {
                             "class_id": "Tecumseth-BH-THU-02",
@@ -550,7 +485,7 @@
                             "class_level": ["Beginner", "Intermediate", "Advance"],
                             "age_group": ["8-14"],
                             "class_type": "Bhangra",
-                            "class_link": "https://townofnewtecumseth.perfectmind.com/23798/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=fb9cd293-a7d0-48d9-a83a-9bea6a90c05f&redirectedFromEmbededMode=False&courseId=21c577c5-dafc-4682-a3c2-373c09e23d00"
+                            "class_link": "https://townofnewtecumseth.perfectmind.com/23798/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=fb9cd293-a7d0-48d9-a83a-9bea6a90c05f&redirectedFromEmbededMode=False&courseId=a1091e81-fd19-4cc1-9b30-b8119d75a1ff"
                         },
                         {
                             "class_id": "Tecumseth-BH-THU-03",
@@ -560,7 +495,7 @@
                             "class_level": ["Beginner", "Intermediate", "Advance"],
                             "age_group": ["15+"],
                             "class_type": "Bhangra",
-                            "class_link": "https://townofnewtecumseth.perfectmind.com/23798/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=fb9cd293-a7d0-48d9-a83a-9bea6a90c05f&redirectedFromEmbededMode=False&courseId=eeb1d1a6-676e-4f1a-965d-5189f52c6a2c"
+                            "class_link": "https://townofnewtecumseth.perfectmind.com/23798/Clients/BookMe4LandingPages/CoursesLandingPage?widgetId=fb9cd293-a7d0-48d9-a83a-9bea6a90c05f&redirectedFromEmbededMode=False&courseId=4d7ed990-1ebb-41fc-b596-362dde1005d7"
                         }
                     ]
                 }
